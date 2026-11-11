@@ -1,0 +1,25 @@
+# Dependencies / build output
+node_modules/
+dist/
+build/
+.cache/
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Local / editor config
+.claude/
+.vscode/
+.idea/
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

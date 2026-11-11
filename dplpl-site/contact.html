@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact D++ | Talk to our team</title>
+<meta name="description" content="Tell us what you are trying to solve. A member of our team will reply within two business days. Offices in the USA, Pakistan, India and the UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-contact">
+
+<!-- Shared gradients for the clay illustrations on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+    <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+    <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+    <radialGradient id="bOrange" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFD9BD"/><stop offset=".5" stop-color="#FF975A"/><stop offset="1" stop-color="#D45E24"/></radialGradient>
+    <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFDF8"/><stop offset="1" stop-color="#E6D8C6"/></linearGradient>
+    <linearGradient id="lilacBox" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4EEFF"/><stop offset="1" stop-color="#B99BF5"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages). aria-current marks this page.
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     CONTACT FOLD 1 — HERO
+     ===================================================================== -->
+<section class="contact-hero" aria-labelledby="contactHeroTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+
+    <div class="about-card contact-hero-card reveal">
+      <div class="about-copy">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h1 class="about-title" id="contactHeroTitle">What's <span class="ul">slowing</span> your business down?</h1>
+        <p class="contact-sub">Tell us the problem in your own words. A senior member of our team, not a sales representative, will reply within two business days with how we would approach it.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="#start">Start the conversation <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--white" href="#offices">Our offices</a>
+        </div>
+      </div>
+
+      <!-- Illustration: a message travelling from a speech bubble to an open envelope -->
+      <svg class="about-art" viewBox="0 0 480 400" aria-hidden="true" focusable="false">
+        <ellipse cx="300" cy="372" rx="130" ry="14" fill="#000" opacity=".22"/>
+        <g class="art-bob">
+          <path d="M60 70 H250 A24 24 0 0 1 274 94 V190 A24 24 0 0 1 250 214 H140 L96 252 V214 H60 A24 24 0 0 1 36 190 V94 A24 24 0 0 1 60 70 Z" fill="url(#lilacBox)"/>
+          <circle class="cdot c1" cx="104" cy="142" r="14" fill="url(#bViolet)"/>
+          <circle class="cdot c2" cx="155" cy="142" r="14" fill="url(#bPink)"/>
+          <circle class="cdot c3" cx="206" cy="142" r="14" fill="url(#bYellow)"/>
+        </g>
+        <g class="art-bob art-bob--c">
+          <rect x="220" y="236" width="200" height="128" rx="16" fill="url(#cream)"/>
+          <path d="M220 252 L320 316 L420 252" fill="none" stroke="#D6C3AC" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M228 246 L320 190 L412 246" fill="#F3E9DC"/>
+        </g>
+        <g class="art-bob art-bob--b"><rect x="380" y="96" width="40" height="40" rx="10" fill="url(#bSky)" transform="rotate(16 400 116)"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CONTACT FOLD 2 — WHAT HAPPENS NEXT + DETAILS (left) · FORM (right)
+     The form has no server yet. Set data-endpoint on the <form> to a
+     URL that accepts a JSON POST; until then it shows the thank-you
+     message without sending anything (staging behaviour).
+     ===================================================================== -->
+<section class="section section--soft contact-main" id="start" aria-label="Contact details and form">
+  <div class="wrap contact-grid">
+    <div class="contact-left">
+      <div class="next-block reveal">
+        <h2 class="h3">What happens next</h2>
+        <ol class="next-steps-list">
+          <li><span class="ns-num">1</span><div><b>You tell us what you're trying to solve.</b><span>A few sentences is enough.</span></div></li>
+          <li><span class="ns-num">2</span><div><b>We come back with an initial view.</b><span>The questions that matter, and how we would frame the problem.</span></div></li>
+          <li><span class="ns-num">3</span><div><b>If there is a fit, we scope a first engagement.</b><span>Two to ten weeks, with a clear question and a number to move. If there isn't a fit, we will say so.</span></div></li>
+        </ol>
+      </div>
+
+      <ul class="detail-list reveal" style="--d:1">
+        <li class="detail">
+          <span class="lbl">Call us</span>
+          <span class="val">+1 229-699-4144</span>
+          <button class="copy-btn" data-copy="+1 229-699-4144">Copy</button>
+        </li>
+        <li class="detail">
+          <span class="lbl">Email</span>
+          <span class="val">info@dplpl.com</span>
+          <button class="copy-btn" data-copy="info@dplpl.com">Copy</button>
+        </li>
+        <li class="detail">
+          <span class="lbl">Global Headquarters</span>
+          <span class="val">3401 Mallory Lane, Franklin, TN 37067, USA</span>
+          <button class="copy-btn" data-copy="3401 Mallory Lane, Franklin, TN 37067, USA">Copy</button>
+        </li>
+      </ul>
+      <a class="inline-link reveal" style="--d:2" href="faqs.html">Read answers to common questions <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="form-card reveal" style="--d:1">
+      <form id="contactForm" novalidate data-endpoint="">
+        <div class="form-top">
+          <b>Start the conversation</b>
+          <span class="form-meter" aria-hidden="true"><i id="formMeter"></i></span>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <label for="f-first">First name</label>
+            <input id="f-first" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
+            <p class="err" id="f-first-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-last">Last name</label>
+            <input id="f-last" name="lastName" type="text" autocomplete="family-name" placeholder="Last name" required>
+            <p class="err" id="f-last-err"></p>
+          </div>
+          <div class="field field--full">
+            <label for="f-email">Work email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
+            <p class="err" id="f-email-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-company">Company</label>
+            <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Company name" required>
+            <p class="err" id="f-company-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-title">Job title</label>
+            <input id="f-title" name="jobTitle" type="text" autocomplete="organization-title" placeholder="Your role" required>
+            <p class="err" id="f-title-err"></p>
+          </div>
+          <div class="field field--full">
+            <label for="f-msg">What are you trying to solve?</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="A few sentences is enough." required></textarea>
+            <p class="err" id="f-msg-err"></p>
+          </div>
+          <div class="field field--full field--check">
+            <label class="check" for="f-consent">
+              <input id="f-consent" name="consent" type="checkbox" required>
+              <span class="box" aria-hidden="true"></span>
+              <span>I agree to D++ contacting me about this enquiry.</span>
+            </label>
+            <p class="err" id="f-consent-err"></p>
+          </div>
+        </div>
+        <p class="err err--form" id="formErr" role="alert"></p>
+        <button class="btn btn--violet btn--block submit" type="submit" id="formSubmit">Start the conversation <span class="arr" aria-hidden="true">→</span></button>
+        <p class="form-note">No pitch deck. No obligation. Just a straight answer.</p>
+      </form>
+
+      <!-- Thank-you message (replaces the form) -->
+      <div class="thanks" id="formThanks" hidden tabindex="-1">
+        <svg class="thanks-art" viewBox="0 0 160 120" aria-hidden="true">
+          <circle cx="80" cy="60" r="40" fill="url(#bViolet)"/>
+          <path d="M62 61 l12 12 l24 -26" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h2 class="h3">Thank you. Your message is with our team.</h2>
+        <p>A senior member of our team will reply within two business days. In the meantime, see how we have helped organizations like yours.</p>
+        <a class="inline-link" href="case-studies.html">See client results <span class="arr" aria-hidden="true">→</span></a>
+        <div class="confetti" id="confetti" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CONTACT FOLD 3 — OUR OFFICES
+     Each card shows the office's local time (data-tz) and whether it's
+     within working hours there (9:00 to 18:00, Monday to Friday).
+     ===================================================================== -->
+<section class="section section--white" id="offices" aria-labelledby="officesTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Our offices</span>
+      <h2 class="h2 reveal" style="--d:1" id="officesTitle">Close to our clients. Engineering where it counts.</h2>
+    </div>
+    <ul class="offices">
+      <li class="office reveal" data-tz="America/Chicago" style="--card-bg:#FFE6D6;--d:0">
+        <span class="office-role">Global Headquarters</span>
+        <b class="office-city">Franklin, Tennessee</b>
+        <span class="office-addr">3401 Mallory Lane, Franklin, TN 37067, USA</span>
+        <div class="office-time"><span class="clock">--:--</span><span class="open-pill">Local time</span></div>
+      </li>
+      <li class="office reveal" data-tz="Asia/Dubai" style="--card-bg:#E4D7FF;--d:1">
+        <span class="office-role">Regional Headquarters</span>
+        <b class="office-city">Masdar City</b>
+        <span class="office-addr">UAE</span>
+        <div class="office-time"><span class="clock">--:--</span><span class="open-pill">Local time</span></div>
+      </li>
+      <li class="office reveal" data-tz="Asia/Karachi" style="--card-bg:#DCEBFF;--d:2">
+        <span class="office-role">Innovation Center</span>
+        <b class="office-city">Rawalpindi</b>
+        <span class="office-addr">Pakistan</span>
+        <div class="office-time"><span class="clock">--:--</span><span class="open-pill">Local time</span></div>
+      </li>
+      <li class="office reveal" data-tz="Asia/Kolkata" style="--card-bg:#F3DDF1;--d:3">
+        <span class="office-role">Innovation Center</span>
+        <b class="office-city">Hyderabad</b>
+        <span class="office-addr">India</span>
+        <div class="office-time"><span class="clock">--:--</span><span class="open-pill">Local time</span></div>
+      </li>
+    </ul>
+    <div class="head-links offices-links reveal">
+      <a class="inline-link" href="about.html">About D++ <span class="arr" aria-hidden="true">→</span></a>
+      <a class="inline-link" href="services.html">Our services <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#values">Our approach</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

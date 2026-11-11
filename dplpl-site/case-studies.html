@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Case studies | D++</title>
+<meta name="description" content="How D++ clients grew revenue, automated decisions and took structural cost out of their operations. Real engagements, measured in real numbers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-cases">
+
+<!-- Shared gradients for the clay illustrations on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+    <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+    <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+    <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB585"/><stop offset="1" stop-color="#EF7534"/></linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFCDA8"/><stop offset="1" stop-color="#F6985E"/></linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFE4D0"/><stop offset="1" stop-color="#FCBB8F"/></linearGradient>
+    <linearGradient id="bar4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFF4EA"/><stop offset="1" stop-color="#FFD6BA"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages)
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html" aria-current="page">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     CASE STUDIES FOLD 1 — HERO + STATS STRIP
+     ===================================================================== -->
+<section class="about-hero" aria-labelledby="casesTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><span aria-current="page">Case studies</span></nav>
+    <div class="about-card reveal">
+      <div class="about-copy">
+        <span class="eyebrow eyebrow--light">Case studies</span>
+        <h1 class="about-title" id="casesTitle">Results, written in our <span class="ul">clients' numbers.</span></h1>
+        <p class="contact-sub">Ambition is easy to put on a slide. These are the problems our clients brought to us, what we built together, and what changed on their P&amp;L.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="#stories">Explore the stories <span class="arr" aria-hidden="true">↓</span></a>
+          <a class="btn btn--white" href="contact.html#start">Talk to us <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <!-- A live "client results" report: the results line draws up from the agreed baseline
+           while the headline number cycles through real client outcomes (CSS only, 12s loop). -->
+      <div class="result-board" aria-hidden="true">
+        <span class="rb-chip rb-chip--a"><i>✓</i>Baseline agreed</span>
+        <div class="rb-card">
+          <div class="rb-head"><span>Client results</span><span class="rb-live"><i></i>Measured</span></div>
+          <div class="rb-nums">
+            <span class="rb-num" style="--i:0"><b>+$102M</b><span>new revenue in three fiscal quarters</span></span>
+            <span class="rb-num" style="--i:1"><b>Weeks → days</b><span>new-project onboarding for a global energy group</span></span>
+            <span class="rb-num" style="--i:2"><b>25+ FTEs</b><span>of repeatable work returned</span></span>
+            <span class="rb-num" style="--i:3"><b>5.6% → 3.8%</b><span>cost of quality for a diagnostic-imaging manufacturer</span></span>
+          </div>
+          <svg class="rb-chart" viewBox="0 0 360 140">
+            <defs><linearGradient id="rbArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B98CFF" stop-opacity=".55"/><stop offset="1" stop-color="#B98CFF" stop-opacity="0"/></linearGradient></defs>
+            <g stroke="#EFE7FF" stroke-width="1"><line x1="0" y1="35" x2="360" y2="35"/><line x1="0" y1="70" x2="360" y2="70"/><line x1="0" y1="105" x2="360" y2="105"/></g>
+            <line x1="0" y1="112" x2="360" y2="112" stroke="#FFB585" stroke-width="2" stroke-dasharray="6 6"/>
+            <text x="4" y="130" font-family="Instrument Sans, sans-serif" font-size="11" font-weight="600" fill="#EF7534">Baseline</text>
+            <path class="rb-area" d="M0 116 C40 115 60 110 90 104 S140 94 170 80 S230 58 260 44 S320 20 356 12 L356 140 L0 140 Z" fill="url(#rbArea)"/>
+            <path class="rb-line" d="M0 116 C40 115 60 110 90 104 S140 94 170 80 S230 58 260 44 S320 20 356 12" fill="none" stroke="#6B3FD0" stroke-width="4" stroke-linecap="round" pathLength="100"/>
+            <circle class="rb-dot" cx="356" cy="12" r="7" fill="#FFE27A" stroke="#6B3FD0" stroke-width="3"/>
+          </svg>
+          <div class="rb-foot"><span>Q1</span><span>Q2</span><span>Q3</span></div>
+        </div>
+        <span class="rb-chip rb-chip--b"><i>✓</i>Results you can audit</span>
+      </div>
+    </div>
+    <ul class="stats stats--4">
+      <li class="stat reveal" style="--d:1"><b>Hundreds of millions</b><span class="stat-label">in documented client impact</span></li>
+      <li class="stat reveal" style="--d:2"><b data-count="102" data-prefix="$" data-suffix="M">$102M</b><span class="stat-label">new revenue for one client in three fiscal quarters</span></li>
+      <li class="stat reveal" style="--d:3"><b>Weeks → days</b><span class="stat-label">new-project onboarding for a global energy group</span></li>
+      <li class="stat reveal" style="--d:4"><b data-count="25" data-suffix="+">25+</b><span class="stat-label">FTEs of repeatable work returned to one client</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CASE STUDIES FOLD 2 — FEATURED STORY
+     ===================================================================== -->
+<section class="section section--white" aria-labelledby="featStoryTitle">
+  <div class="wrap">
+    <article class="story-feature reveal">
+      <span class="rev-tag">Featured · Strategy, Innovation &amp; Growth</span>
+      <h2 class="h2" id="featStoryTitle">$102M in organic growth, with attribution the CFO could stand behind.</h2>
+      <div class="story-steps">
+        <div class="story-step"><b>The challenge</b><p>Leadership at a multi-site operator could not attribute volume to its source, or tell which customers were most valuable and most likely to convert.</p></div>
+        <div class="story-step"><b>What we did</b><p>We built persona-based predictive models, launched multi-channel acquisition programs, and delivered revenue attribution the CFO validated.</p></div>
+        <div class="story-step"><b>The outcome</b><p>A repeatable growth engine, with attribution the CFO trusts enough to build a board plan around.</p></div>
+      </div>
+      <ul class="story-figs">
+        <li><b data-count="102" data-prefix="+$" data-suffix="M">+$102M</b><span>Incremental revenue in three fiscal quarters</span></li>
+        <li><b data-count="20" data-prefix="+$" data-suffix="M">+$20M</b><span>Incremental EBITDA</span></li>
+        <li><b data-count="93" data-suffix="%+">93%+</b><span>Confidence in a board-approved $41.3M EBITDA plan</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CASE STUDIES FOLDS 3 + 4 — FOUR BOARD QUESTIONS (tabs) + STORY SLIDER
+     The tabs filter the slider. Each story's data-tags lists the board
+     questions it answers: growth, efficiency, cost, tech.
+     ===================================================================== -->
+<section class="section section--soft" id="stories" data-slider aria-labelledby="boardTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Four questions every board asks</span>
+      <h2 class="h2 reveal" style="--d:1" id="boardTitle">Every board asks four questions. Here is how our clients answered them.</h2>
+      <p class="lead reveal" style="--d:2">Each story below answers at least one. Use the tabs to filter the slider.</p>
+    </div>
+
+    <div class="chip-row reveal" role="group" aria-label="Filter stories by board question">
+      <button data-filter="all" aria-pressed="true">All stories</button>
+      <button data-filter="growth" aria-pressed="false"><i class="chip chip--peach"></i>Top-line growth</button>
+      <button data-filter="efficiency" aria-pressed="false"><i class="chip chip--lilac"></i>Operational efficiency</button>
+      <button data-filter="cost" aria-pressed="false"><i class="chip chip--pink"></i>Bottom line</button>
+      <button data-filter="tech" aria-pressed="false"><i class="chip chip--sky"></i>Technology modernization</button>
+    </div>
+
+    <!-- The board's question and its headline answer, shown for the selected tab -->
+    <div class="bq reveal">
+      <div class="bq-panel" data-q="all"><span class="bq-label">Four questions</span><b class="bq-q">Growth, efficiency, cost and the platform to build on.</b><span class="bq-a">Pick a question to see the answer and the stories behind it.</span></div>
+      <div class="bq-panel" data-q="growth" hidden><span class="bq-label">The board's question</span><b class="bq-q">How do we grow without compromising margin?</b><span class="bq-a">+$102M incremental revenue and +$20M EBITDA in three fiscal quarters</span></div>
+      <div class="bq-panel" data-q="efficiency" hidden><span class="bq-label">The board's question</span><b class="bq-q">How do we run better?</b><span class="bq-a">Most prior authorizations now algorithm-driven, with clinicians on the cases that need them</span></div>
+      <div class="bq-panel" data-q="cost" hidden><span class="bq-label">The board's question</span><b class="bq-q">What does it cost, and where can we take cost out?</b><span class="bq-a">25+ FTEs of repeatable work returned across 35 legal entities</span></div>
+      <div class="bq-panel" data-q="tech" hidden><span class="bq-label">The board's question</span><b class="bq-q">What do we build on?</b><span class="bq-a">Models reach production about 50% faster; onboarding in days, not weeks</span></div>
+    </div>
+
+    <div class="slider-head">
+      <h2 class="h3 reveal">More stories from the field.</h2>
+    </div>
+  </div>
+
+  <!-- Stories grid: the FIRST story that matches the selected tab shows as the large
+       featured card, the next three as smaller cards; any others stay hidden.
+       Put the newest story first to feature it. data-max sets how many show. -->
+  <div class="slider-track story-grid" data-max="4" aria-label="Case studies">
+    <article class="slide story" data-tags="efficiency" style="--card-bg:#E4D7FF">
+      <span class="post-tags"><span>Healthcare</span><span>Data &amp; AI</span></span>
+      <h3>The slowest decision point became the most automated one.</h3>
+      <p>Prior authorization for post-acute care at a national health plan ran through manual, inconsistent review.</p>
+      <ul class="story-mini"><li><b>85%</b> of prior authorizations algorithm-driven</li><li>Centralized reporting and actuarial analytics</li></ul>
+    </article>
+    <article class="slide story" data-tags="cost tech growth" style="--card-bg:#E4D7FF">
+      <span class="post-tags"><span>Healthcare</span><span>Data &amp; AI</span></span>
+      <h3>One trusted number, across every region.</h3>
+      <p>A national oncology care network had inconsistent data in every region and no governance to settle whose number was right.</p>
+      <ul class="story-mini"><li><b>10%</b> cost reduction</li><li><b>~4%</b> organic growth year over year</li><li><b>100%</b> enterprise-wide data foundation</li></ul>
+    </article>
+    <article class="slide story" data-tags="efficiency cost growth" style="--card-bg:#DCEBFF">
+      <span class="post-tags"><span>Manufacturing</span><span>Systems &amp; Operations</span></span>
+      <h3>Quality and growth, moving together.</h3>
+      <p>A diagnostic-imaging manufacturer had to protect margin across installation, warranty and service while growing service revenue.</p>
+      <ul class="story-mini"><li>Cost of quality <b>5.6% to 3.8%</b></li><li><b>~$10M</b> a year sustained</li><li><b>$30M</b> from bundled services</li></ul>
+    </article>
+    <article class="slide story" data-tags="tech" style="--card-bg:#E4D7FF">
+      <span class="post-tags"><span>Healthcare</span><span>Data &amp; AI</span></span>
+      <h3>An enterprise data foundation, built from zero in 10 months.</h3>
+      <p>A care-management organization had no data foundation and no data-science team.</p>
+      <ul class="story-mini"><li><b>10 months</b> to production-grade cloud data systems</li></ul>
+    </article>
+    <article class="slide story" data-tags="cost efficiency" style="--card-bg:#F3DDF1">
+      <span class="post-tags"><span>Digital Services</span><span>People &amp; Process</span></span>
+      <h3>Finance, automated across 35 legal entities.</h3>
+      <p>A European digital services group ran finance on repeatable manual work in every entity.</p>
+      <ul class="story-mini"><li><b>25+</b> FTEs of work returned to the business</li><li><b>35</b> entities on one automated process</li></ul>
+    </article>
+    <article class="slide story" data-tags="tech efficiency" style="--card-bg:#DCEBFF">
+      <span class="post-tags"><span>Energy</span><span>Systems &amp; Operations</span></span>
+      <h3>From data science everywhere to delivery at scale.</h3>
+      <p>A global energy infrastructure group had data science in every domain and delivery in none.</p>
+      <ul class="story-mini"><li><b>~50%</b> faster from model to production</li><li>Onboarding from <b>weeks to days</b></li></ul>
+    </article>
+    <!-- Content doc: headline figure needed before this card goes live. -->
+    <article class="slide story" data-tags="growth tech" style="--card-bg:#DCEBFF">
+      <span class="post-tags"><span>Transportation</span><span>Systems &amp; Operations</span></span>
+      <h3>Connected equipment, turned into recurring revenue.</h3>
+      <p>A heavy-transportation manufacturer collected equipment data it was not yet earning from.</p>
+      <ul class="story-mini"><li class="fig-pending">Headline figure to come</li></ul>
+    </article>
+  </div>
+  <div class="wrap"><p class="slider-empty" hidden>No stories for this question yet.</p></div>
+</section>
+
+<!-- =====================================================================
+     CASE STUDIES FOLD 5 — HOW WE MEASURE IMPACT (three steps, in order)
+     ===================================================================== -->
+<section class="section section--white" aria-labelledby="measureTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">How we measure impact</span>
+      <h2 class="h2 reveal" style="--d:1" id="measureTitle">Every engagement starts with a baseline and ends with a number.</h2>
+      <p class="lead reveal" style="--d:2">We will not promise a painless transformation. We will promise a clear plan, an honest view of the risks, and results you can audit.</p>
+    </div>
+    <ol class="measure">
+      <li class="reveal"><span class="m-num">1</span><b>Agree the baseline.</b><p>Before work starts, we set the measure that defines success with your leadership team.</p></li>
+      <li class="reveal" style="--d:1"><span class="m-num">2</span><b>Measure against it.</b><p>Progress is reported on results, not activity, at every stage.</p></li>
+      <li class="reveal" style="--d:2"><span class="m-num">3</span><b>Report it your board's way.</b><p>Revenue, cost, cycle time or capacity, in the terms your board already uses.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CASE STUDIES FOLD 6 — CLOSING CTA
+     ===================================================================== -->
+<section class="section section--soft contact" aria-labelledby="casesCtaTitle">
+  <div class="wrap">
+    <div class="contact-card svc-cta join-card reveal">
+      <div class="contact-copy">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2 class="h1" id="casesCtaTitle">Your results could be the next story here.</h2>
+        <p class="lead">Tell us the number you need to move. We will show you how we would approach it.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="contact.html#start">Talk to us <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--white" href="services.html">Our services</a>
+        </div>
+      </div>
+      <!-- A stack of client stories, with a new "your story" card dealt on top on a loop -->
+      <div class="next-stack join-art" aria-hidden="true">
+        <span class="ns-card ns-1"><i class="ns-tag">Energy</i><b>~50%</b><span>faster from model to production</span></span>
+        <span class="ns-card ns-2"><i class="ns-tag">Growth</i><b>+$102M</b><span>new revenue in three quarters</span></span>
+        <span class="ns-card ns-3"><i class="ns-tag">Your company</i><b>Your number<i class="ns-caret"></i></b><span>the next story here</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html" aria-current="page">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Insights | D++</title>
+<meta name="description" content="Perspectives on data, AI and enterprise transformation from the D++ team. Practical thinking for leaders who need results, not hype.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-blog">
+
+<!-- Shared gradients for the clay illustrations on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+    <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+    <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+    <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+    <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F4EEFF"/><stop offset=".55" stop-color="#CDB5FF"/><stop offset="1" stop-color="#9A76EE"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages)
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html" aria-current="page">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     INSIGHTS FOLD 1 — HERO
+     ===================================================================== -->
+<section class="about-hero" aria-labelledby="blogTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><span aria-current="page">Insights</span></nav>
+    <div class="about-card reveal">
+      <div class="about-copy">
+        <span class="eyebrow eyebrow--light">Insights</span>
+        <h1 class="about-title" id="blogTitle">Thinking that starts in <span class="ul">the field.</span></h1>
+        <p class="contact-sub">What we are learning from the work: where AI pays its way, why transformations stall in the middle, and what it takes to make change last.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="#brief">Subscribe to The D++ Brief <span class="arr" aria-hidden="true">→</span></a>
+
+        </div>
+      </div>
+      <!-- A stack of article cards floating up from the field -->
+      <div class="paper-stack" aria-hidden="true">
+        <span class="paper p1"><i class="paper-tag" style="--c:#B98CFF"></i><i class="paper-line w80"></i><i class="paper-line w60"></i><i class="paper-line w70"></i></span>
+        <span class="paper p2"><i class="paper-tag" style="--c:#FFB585"></i><i class="paper-line w70"></i><i class="paper-line w90"></i><i class="paper-line w50"></i></span>
+        <span class="paper p3"><i class="paper-tag" style="--c:#8EC5FF"></i><i class="paper-line w90"></i><i class="paper-line w60"></i><i class="paper-line w80"></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     INSIGHTS FOLD 2 — FEATURED ARTICLE
+     [Author], [Title], [Date] and [X] are placeholders from the content doc.
+     ===================================================================== -->
+<section class="section section--soft featured-sec" aria-labelledby="featTitle">
+  <div class="wrap">
+    <article class="feature-card reveal">
+      <div class="feature-art" aria-hidden="true">
+        <svg viewBox="0 0 400 300">
+          <ellipse cx="200" cy="272" rx="130" ry="14" fill="#2A1680" opacity=".2"/>
+          <g class="art-bob"><rect x="70" y="80" width="56" height="56" rx="14" fill="url(#bPink)"/></g>
+          <g class="art-bob art-bob--b"><circle cx="120" cy="190" r="26" fill="url(#bSky)"/></g>
+          <path d="M150 150 C190 150 190 150 214 150" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="6 10" stroke-linecap="round"/>
+          <path d="M220 110 V230 A60 18 0 0 0 340 230 V110 Z" fill="url(#cyl)"/>
+          <ellipse cx="280" cy="110" rx="60" ry="18" fill="#F7F2FF"/>
+          <ellipse class="pulse-soft" cx="280" cy="112" rx="44" ry="11" fill="#FFE27A"/>
+          <g class="art-bob art-bob--c"><circle cx="336" cy="66" r="18" fill="url(#bYellow)"/></g>
+        </svg>
+      </div>
+      <div class="feature-copy">
+        <span class="rev-tag">Featured · Data &amp; AI</span>
+        <h2 class="h2" id="featTitle">AI pilots are easy. Production is hard.</h2>
+        <p class="lead">Most enterprises have more pilots than they can scale. The barrier is rarely the model. It is the data underneath it, the governance around it, and the question of who decides when the algorithm is unsure.</p>
+        <p class="byline">By [Author], [Title] · [Date] · [X] min read</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =====================================================================
+     INSIGHTS FOLD 5 — NEWSLETTER: THE D++ BRIEF
+     No mailing service is connected yet: set data-endpoint on the form.
+     Content doc note: confirm the monthly cadence.
+     ===================================================================== -->
+<section class="section section--white" id="brief" aria-labelledby="briefTitle">
+  <div class="wrap">
+    <div class="brief-card reveal">
+      <div class="brief-copy">
+        <span class="eyebrow">Newsletter</span>
+        <h2 class="h2" id="briefTitle">The D++ Brief</h2>
+        <p class="lead">One email a month: what we are seeing in data, AI and transformation, and what it means for your next decision. No noise.</p>
+      </div>
+      <div class="brief-form-wrap">
+        <form id="briefForm" class="brief-form" novalidate data-endpoint="">
+          <div class="field">
+            <label for="b-email">Work email</label>
+            <div class="brief-row">
+              <input id="b-email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
+              <button class="btn btn--violet" type="submit">Subscribe <span class="arr" aria-hidden="true">→</span></button>
+            </div>
+            <p class="err" id="b-email-err"></p>
+          </div>
+          <p class="form-note">You can unsubscribe at any time. See our Privacy Policy.</p>
+        </form>
+        <div class="brief-thanks" id="briefThanks" hidden tabindex="-1">
+          <b>You're subscribed.</b>
+          <span>The next D++ Brief will arrive in your inbox.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     INSIGHTS FOLD 6 — CLOSING CTA
+     ===================================================================== -->
+<section class="section section--soft contact" aria-labelledby="blogCtaTitle">
+  <div class="wrap">
+    <div class="contact-card svc-cta join-card reveal">
+      <div class="contact-copy">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2 class="h1" id="blogCtaTitle">Reading about it is a start. Talking it through is faster.</h2>
+        <p class="lead">If one of these challenges sounds familiar, tell us where you are today.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="contact.html#start">Talk to us <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--white" href="case-studies.html">See client results</a>
+        </div>
+      </div>
+      <svg class="contact-art join-art" viewBox="0 0 260 200" aria-hidden="true">
+        <g class="art-bob"><rect x="30" y="40" width="120" height="84" rx="16" fill="#FFFFFF"/><rect x="48" y="60" width="60" height="8" rx="4" fill="#B98CFF"/><rect x="48" y="78" width="84" height="8" rx="4" fill="#E4D7FF"/><rect x="48" y="96" width="70" height="8" rx="4" fill="#E4D7FF"/></g>
+        <g class="art-bob art-bob--b"><path d="M120 110 H228 A14 14 0 0 1 242 124 V160 A14 14 0 0 1 228 174 H210 L214 192 L192 174 H120 A14 14 0 0 1 106 160 V124 A14 14 0 0 1 120 110 Z" fill="url(#bYellow)"/><circle cx="150" cy="142" r="6" fill="#2A1680"/><circle cx="174" cy="142" r="6" fill="#2A1680"/><circle cx="198" cy="142" r="6" fill="#2A1680"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html" aria-current="page">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

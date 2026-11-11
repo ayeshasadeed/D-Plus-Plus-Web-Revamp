@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About D++</title>
+<meta name="description" content="Your enterprise data holds more promise than your systems can deliver. Leading enterprises call on D++ for that moment. Our approach, and what working with D++ gets each leader.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-about">
+
+<!-- Shared gradients for the clay illustrations on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+    <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+    <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+    <radialGradient id="bOrange" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFD9BD"/><stop offset=".5" stop-color="#FF975A"/><stop offset="1" stop-color="#D45E24"/></radialGradient>
+    <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+    <radialGradient id="bLilac" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#D9C6FF"/><stop offset="1" stop-color="#9F7DEE"/></radialGradient>
+    <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F4EEFF"/><stop offset=".55" stop-color="#CDB5FF"/><stop offset="1" stop-color="#9A76EE"/></linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A6D0FF"/><stop offset="1" stop-color="#5A8CEB"/></linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB585"/><stop offset="1" stop-color="#EF7534"/></linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFCDA8"/><stop offset="1" stop-color="#F6985E"/></linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFE4D0"/><stop offset="1" stop-color="#FCBB8F"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages). aria-current marks this page.
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html" aria-current="page">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     ABOUT FOLD 1 — HERO CARD + STATS STRIP
+     Wireframe: dark rounded card with headline, two buttons and a line
+     at the foot; a strip of stat boxes underneath.
+     ===================================================================== -->
+<section class="about-hero" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><span aria-current="page">About Us</span></nav>
+
+    <div class="about-card reveal">
+      <div class="about-copy">
+        <span class="eyebrow eyebrow--light">About us</span>
+        <h1 class="about-title" id="aboutTitle">
+          Your enterprise data holds <span class="ul">more promise</span> than your systems can deliver.
+          <span class="about-title-sub">Leading enterprises call on D++ for <em class="grad">that moment.</em></span>
+        </h1>
+        <div class="hero-actions">
+          <a class="btn btn--white" href="team.html">Meet the team <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--yellow" href="contact.html#start">Book a call <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <!-- Illustration: a data core full of promise, squeezed through one narrow pipe -->
+      <svg class="about-art" viewBox="0 0 480 420" aria-hidden="true" focusable="false">
+        <ellipse cx="190" cy="392" rx="120" ry="14" fill="#000" opacity=".22"/>
+        <ellipse cx="410" cy="392" rx="52" ry="8" fill="#000" opacity=".2"/>
+        <g class="art-bob"><rect x="104" y="96" width="38" height="38" rx="9" fill="url(#bPink)" transform="rotate(-14 123 115)"/></g>
+        <g class="art-bob art-bob--b"><circle cx="186" cy="70" r="22" fill="url(#bYellow)"/></g>
+        <g class="art-bob art-bob--c"><rect x="228" y="110" width="34" height="34" rx="8" fill="url(#bSky)" transform="rotate(18 245 127)"/></g>
+        <g class="art-bob art-bob--b"><circle cx="150" cy="172" r="16" fill="url(#bOrange)"/></g>
+        <g class="art-bob"><circle cx="238" cy="186" r="13" fill="url(#bLilac)"/></g>
+        <g class="art-bob art-bob--c"><rect x="176" y="150" width="28" height="28" rx="7" fill="url(#bViolet)" transform="rotate(-8 190 164)"/></g>
+        <path d="M110 236 V370 A80 24 0 0 0 270 370 V236 Z" fill="url(#cyl)"/>
+        <path d="M110 280 A80 24 0 0 0 270 280" fill="none" stroke="#8A62EA" stroke-width="4" opacity=".5"/>
+        <path d="M110 324 A80 24 0 0 0 270 324" fill="none" stroke="#8A62EA" stroke-width="4" opacity=".5"/>
+        <ellipse cx="190" cy="236" rx="80" ry="24" fill="#F7F2FF"/>
+        <ellipse cx="190" cy="238" rx="60" ry="15" fill="#E4D7FF"/>
+        <path d="M268 340 H352" stroke="url(#tube)" stroke-width="14" stroke-linecap="round"/>
+        <path d="M272 336 H346" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>
+        <circle class="trickle" cx="276" cy="340" r="6" fill="url(#bYellow)"/>
+        <rect x="362" y="350" width="26" height="40" rx="5" fill="url(#bar1)"/>
+        <rect x="388" y="332" width="26" height="58" rx="5" fill="url(#bar2)"/>
+        <rect x="414" y="318" width="26" height="72" rx="5" fill="url(#bar3)"/>
+      </svg>
+    </div>
+
+    <!-- Stats strip. data-count numbers count up when they scroll into view. -->
+    <ul class="stats">
+      <li class="stat reveal" style="--d:1"><span class="stat-pre">Hundreds of</span><b>millions</b><span class="stat-label">delivered in organic growth</span></li>
+      <li class="stat reveal" style="--d:2"><span class="stat-pre">Up to</span><b data-count="85" data-suffix="%">85%</b><span class="stat-label">efficiency gains with intelligent automation.</span></li>
+      <li class="stat reveal" style="--d:3"><span class="stat-pre">About</span><b>50% faster</b><span class="stat-label">from model to production, with new-project onboarding cut from weeks to days</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =====================================================================
+     ABOUT FOLD 2 — WHAT WE STAND FOR (values grid, 3 × 2)
+     Each card's icon animates on hover or keyboard focus.
+     ===================================================================== -->
+<section class="section section--white" id="values" aria-labelledby="valuesTitle">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <span class="eyebrow reveal">Our approach</span>
+      <h2 class="h2 reveal" style="--d:1" id="valuesTitle">What we stand for</h2>
+      <p class="lead reveal" style="--d:2">Our values shape how we make decisions, how we work with clients and how we hold each other to account. Every engagement tests them.</p>
+    </div>
+
+    <ul class="values">
+      <li class="value reveal" tabindex="0" style="--card-bg:#FFE6D6;--d:0">
+        <span class="value-icon ico-compass" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="#fff" stroke="#17151F" stroke-width="2.4"/><g class="needle"><path d="M24 11 L28 24 L24 37 L20 24 Z" fill="#6B3FD0"/><path d="M24 24 L28 24 L24 37 L20 24 Z" fill="#FFB585"/></g><circle cx="24" cy="24" r="2.6" fill="#17151F"/></svg>
+        </span>
+        <h3>Start with the client's reality</h3>
+        <p>We begin with your customers, your people and the value you need to create, then work back to the technology.</p>
+      </li>
+      <li class="value reveal" tabindex="0" style="--card-bg:#E4D7FF;--d:1">
+        <span class="value-icon ico-handshake" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><g class="hands" fill="none" stroke="#17151F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 L11 14 L19 17" /><path d="M44 19 L37 14 L27 15 L19 22 C17.5 23.5 19.5 26.5 22 25 L27 21.5 L36 29" fill="#fff"/><path d="M11 14 L4 26 L10 31 L19 38 C20.5 39 22.5 38 22 36 C23.5 37 25.5 36 25 34 C26.5 35 28.5 34 28 32 C29.5 33 31.5 31.5 30.5 30 L27 26.5" fill="#fff"/><path d="M37 14 L44 26 L36 29"/></g></svg>
+        </span>
+        <h3>Become part of the team</h3>
+        <p>We do not hand over a plan and walk away. We work inside your organization and stay until the change is delivered.</p>
+      </li>
+      <li class="value reveal" tabindex="0" style="--card-bg:#DCEBFF;--d:2">
+        <span class="value-icon ico-chart" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 40 H40" stroke="#17151F" stroke-width="2.4" stroke-linecap="round"/><rect class="b1" x="11" y="26" width="7" height="12" rx="2" fill="#FFB585"/><rect class="b2" x="21" y="19" width="7" height="19" rx="2" fill="#B98CFF"/><rect class="b3" x="31" y="11" width="7" height="27" rx="2" fill="#6B3FD0"/></svg>
+        </span>
+        <h3>Proof over promises</h3>
+        <p>Every engagement starts with a baseline and ends with a number your board can verify.</p>
+      </li>
+      <li class="value reveal" tabindex="0" style="--card-bg:#F3DDF1;--d:0">
+        <span class="value-icon ico-bubble" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path class="bubble" d="M9 12 H39 A3 3 0 0 1 42 15 V31 A3 3 0 0 1 39 34 H21 L13 41 V34 H9 A3 3 0 0 1 6 31 V15 A3 3 0 0 1 9 12 Z" fill="#fff" stroke="#17151F" stroke-width="2.4" stroke-linejoin="round"/><circle class="dot d1" cx="16" cy="23" r="2.6" fill="#6B3FD0"/><circle class="dot d2" cx="24" cy="23" r="2.6" fill="#6B3FD0"/><circle class="dot d3" cx="32" cy="23" r="2.6" fill="#6B3FD0"/></svg>
+        </span>
+        <h3>Say the hard thing early</h3>
+        <p>We name the risks and trade-offs before they become surprises, even when the news is inconvenient.</p>
+      </li>
+      <li class="value reveal" tabindex="0" style="--card-bg:#FFF2C2;--d:1">
+        <span class="value-icon ico-gear" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><g class="gear"><path d="M21 5 h6 l1 5 4 1.7 4.3 -2.9 4.2 4.2 -2.9 4.3 1.7 4 5 1 v6 l-5 1 -1.7 4 2.9 4.3 -4.2 4.2 -4.3 -2.9 -4 1.7 -1 5 h-6 l-1 -5 -4 -1.7 -4.3 2.9 -4.2 -4.2 2.9 -4.3 -1.7 -4 -5 -1 v-6 l5 -1 1.7 -4 -2.9 -4.3 4.2 -4.2 4.3 2.9 4 -1.7 Z" fill="#fff" stroke="#17151F" stroke-width="2.2" stroke-linejoin="round"/><circle cx="24" cy="24" r="6" fill="#FFE27A" stroke="#17151F" stroke-width="2.2"/></g></svg>
+        </span>
+        <h3>Engineer for the long run</h3>
+        <p>Courage to change matters. Reliable systems are what make the change last.</p>
+      </li>
+      <li class="value reveal" tabindex="0" style="--card-bg:#DDF3E8;--d:2">
+        <span class="value-icon ico-person" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="19" cy="15" r="6" fill="#fff" stroke="#17151F" stroke-width="2.4"/><path d="M7 40 C7 31 12 26 19 26 C26 26 31 31 31 40" fill="#fff" stroke="#17151F" stroke-width="2.4" stroke-linecap="round"/><g class="up"><path d="M33 22 L42 13" stroke="#6B3FD0" stroke-width="2.8" stroke-linecap="round"/><path d="M35 12 H43 V20" fill="none" stroke="#6B3FD0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+        </span>
+        <h3>Leave people stronger</h3>
+        <p>Your people are the most enduring investment in any transformation. We measure ourselves by what they can do after we leave.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =====================================================================
+     ABOUT FOLD 3 — WHAT WORKING WITH D++ GETS YOU
+     Wireframe: label (left) · headline + body (middle) · links (right).
+     Click a headline to open its row. The first row starts open.
+     ===================================================================== -->
+<section class="section section--soft" id="working-with-us" aria-labelledby="workTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Who we work with</span>
+      <h2 class="h2 reveal" style="--d:1" id="workTitle">What working with D++ gets you</h2>
+    </div>
+
+    <div class="aud reveal" style="--d:2">
+      <article class="aud-row open">
+        <span class="aud-label">CEOs and boards</span>
+        <div class="aud-main">
+          <button class="aud-head" aria-expanded="true" aria-controls="aud-1">Strategy that survives contact with reality.<i class="aud-plus" aria-hidden="true"></i></button>
+          <div class="aud-body" id="aud-1"><div>
+            <p>A portfolio of initiatives with clear owners, funded to deliver and measured on results, not activity. For one multi-site operator, that meant +$100M in revenue in three fiscal quarters.</p>
+          </div></div>
+        </div>
+        <a class="aud-link" href="contact.html#start">Talk to a strategy lead <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="aud-row">
+        <span class="aud-label">CFOs</span>
+        <div class="aud-main">
+          <button class="aud-head" aria-expanded="false" aria-controls="aud-2">Numbers your board can build a plan around.<i class="aud-plus" aria-hidden="true"></i></button>
+          <div class="aud-body" id="aud-2"><div>
+            <p>Revenue attribution your finance team trusts, cost structures fixed at the source, and savings that hold. One manufacturer cut its cost of quality by a third.</p>
+          </div></div>
+        </div>
+        <a class="aud-link" href="contact.html#start">Talk to us <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="aud-row">
+        <span class="aud-label">CIOs, CTOs and CDOs</span>
+        <div class="aud-main">
+          <button class="aud-head" aria-expanded="false" aria-controls="aud-3">AI in production, not in pilots.<i class="aud-plus" aria-hidden="true"></i></button>
+          <div class="aud-body" id="aud-3"><div>
+            <p>Governed data foundations first, then predictive models, agents and automation your teams trust. At one national health plan, most prior authorizations are now algorithm-driven, with clinicians on the cases that need them.</p>
+          </div></div>
+        </div>
+        <a class="aud-link" href="service-data-ai.html">Explore Data &amp; AI <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="aud-row">
+        <span class="aud-label">COOs</span>
+        <div class="aud-main">
+          <button class="aud-head" aria-expanded="false" aria-controls="aud-4">Operations that protect margin as you grow.<i class="aud-plus" aria-hidden="true"></i></button>
+          <div class="aud-body" id="aud-4"><div>
+            <p>Value streams redesigned, releases made routine, and repeatable work taken off people's desks. One client returned more than 25 FTEs of work to the business.</p>
+          </div></div>
+        </div>
+        <a class="aud-link" href="service-systems.html">Explore Systems &amp; Operations <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     ABOUT FOLD 4 — CASE STUDIES
+     Three stories from the Case studies page, one per service line.
+     ===================================================================== -->
+<section class="section section--white next-steps" aria-labelledby="nextTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Case studies</span>
+      <h2 class="h2 reveal" style="--d:1" id="nextTitle">See D++ at work</h2>
+    </div>
+    <div class="next-grid">
+      <a class="next-card case-mini reveal" href="case-studies.html" style="--card-bg:#FFE6D6;--d:0">
+        <span class="rev-tag">Strategy &amp; Growth</span>
+        <b class="cm-fig">+$102M</b>
+        <b>Organic growth the CFO could stand behind.</b>
+        <span class="next-text">A multi-site operator gained revenue attribution and a repeatable growth engine in three fiscal quarters.</span>
+      </a>
+      <a class="next-card case-mini reveal" href="case-studies.html" style="--card-bg:#E4D7FF;--d:1">
+        <span class="rev-tag">Healthcare · Data &amp; AI</span>
+        <b class="cm-fig">Algorithm-first</b>
+        <b>The slowest decision point became the most automated one.</b>
+        <span class="next-text">A national health plan now runs most prior authorizations through algorithms, with clinicians on the cases that need them.</span>
+      </a>
+      <a class="next-card case-mini reveal" href="case-studies.html" style="--card-bg:#F3DDF1;--d:2">
+        <span class="rev-tag">Digital Services · People &amp; Process</span>
+        <b class="cm-fig">25+ FTEs</b>
+        <b>Finance, automated across 35 legal entities.</b>
+        <span class="next-text">A European group moved repeatable finance work in every entity onto one automated process.</span>
+      </a>
+    </div>
+    <div class="section-foot reveal"><a class="inline-link" href="case-studies.html">See all case studies <span class="arr" aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html" aria-current="page">About Us</a></li>
+          <li><a href="about.html#values">Our approach</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

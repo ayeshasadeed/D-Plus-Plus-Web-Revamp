@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meet the team | D++</title>
+<meta name="description" content="Meet the D++ leadership team. The truest measure of a partnership is what your people can do after we leave.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-team">
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages). aria-current marks this page.
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html" aria-current="page">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     TEAM FOLD 1 — HERO
+     Clay-careers style: the headline sits in the middle of a drifting
+     collage of team photos. Every frame is a PHOTO PLACEHOLDER: to use a
+     real photo, put an <img src="assets/img/team/....jpg" alt="..."> inside
+     the .photo-ph element (the placeholder art hides automatically).
+     ===================================================================== -->
+<section class="team-hero" aria-labelledby="teamTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><a href="about.html">About Us</a><span aria-hidden="true">/</span><span aria-current="page">Team</span></nav>
+    <div class="team-stage">
+      <!-- floating collage of team photo placeholders -->
+      <div class="collage" aria-hidden="true">
+        <figure class="c-frame" style="--x:2%;--y:6%;--r:-7deg;--w:170px;--bg:#FFE6D6;--dl:0s"><div class="photo-ph"><img src="assets/img/team/hero-1.webp" alt="" loading="eager"><span class="ph-label">Team photo</span></div></figure>
+        <figure class="c-frame" style="--x:16%;--y:58%;--r:5deg;--w:150px;--bg:#E4D7FF;--dl:-2s"><div class="photo-ph"><img src="assets/img/team/hero-2.webp" alt="" loading="eager"><span class="ph-label">Team photo</span></div></figure>
+        <figure class="c-frame" style="--x:78%;--y:4%;--r:6deg;--w:160px;--bg:#DCEBFF;--dl:-1s"><div class="photo-ph"><img src="assets/img/team/hero-4.webp" alt="" loading="eager"><span class="ph-label">Team photo</span></div></figure>
+        <figure class="c-frame" style="--x:84%;--y:56%;--r:-5deg;--w:150px;--bg:#F3DDF1;--dl:-3s"><div class="photo-ph"><img src="assets/img/team/hero-3.webp" alt="" loading="eager"><span class="ph-label">Team photo</span></div></figure>
+        <figure class="c-frame c-frame--sm" style="--x:64%;--y:72%;--r:-3deg;--w:118px;--bg:#FFF2C2;--dl:-1.5s"><div class="photo-ph"><img src="assets/img/team/hero-6.jpg" alt="" loading="eager"><span class="ph-label">Team photo</span></div></figure>
+        <figure class="c-frame c-frame--sm" style="--x:30%;--y:2%;--r:4deg;--w:110px;--bg:#DDF3E8;--dl:-2.5s"><div class="photo-ph"><img src="assets/img/team/hero-5.webp" alt="" loading="eager"><span class="ph-label">Team photo</span></div></figure>
+      </div>
+      <div class="team-hero-copy">
+        <h1 class="team-pill reveal" id="teamTitle">Meet the team</h1>
+        <p class="team-headline reveal" style="--d:1">The truest measure of a partnership is what <span class="ul">your people</span> can do after we leave.</p>
+        <div class="hero-actions team-actions reveal" style="--d:3">
+          <a class="btn btn--dark" href="#leadership">Meet our leadership <span class="arr" aria-hidden="true">↓</span></a>
+          <a class="btn btn--ghost" href="#join">Join us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     TEAM FOLD 2 — LEADERSHIP
+     Each card shows photo, name, title and belief line. Hover (or tap,
+     or Enter) flips it to the detailed description.
+     PHOTO PLACEHOLDERS: add <img src="assets/img/team/NAME.jpg" alt="NAME">
+     inside each .photo-ph to replace the placeholder.
+     ===================================================================== -->
+<section class="section section--white" id="leadership" aria-labelledby="leadTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Leadership</span>
+      <h2 class="h2 reveal" style="--d:1" id="leadTitle">The people who stay until it's delivered</h2>
+    </div>
+
+    <ul class="leaders">
+      <li class="leader reveal" style="--card-bg:#FFE6D6;--d:0">
+        <button class="leader-card" aria-expanded="false" aria-label="Babar Maqsood, Founder. Show more about Babar">
+          <span class="leader-front">
+            <span class="photo-ph photo-ph--lg" data-person="Babar Maqsood"><img src="assets/img/team/babar-maqsood.webp" alt="Babar Maqsood"><span class="ph-label">Photo placeholder</span></span>
+            <span class="leader-meta">
+              <b class="leader-name">Babar Maqsood</b>
+              <span class="leader-title">Founder</span>
+              <span class="leader-belief">Babar believes a consultancy earns its place by becoming part of the client's organization, not by visiting it.</span>
+            </span>
+            <span class="leader-hint" aria-hidden="true">Hover to read more</span>
+          </span>
+          <span class="leader-back">
+            <b class="leader-name">Babar Maqsood</b>
+            <span class="leader-title">Founder</span>
+            <span class="leader-bio">Babar Maqsood is the founder of D++, where he leads a global consulting practice that helps enterprises turn data and AI into measurable results. He works alongside leadership teams in healthcare, energy and industry to frame the problems worth solving, then stays with them through the build. A serial entrepreneur, Babar also advises early-stage and mid-size companies on growth, technology strategy and building the teams to sustain both.</span>
+          </span>
+        </button>
+      </li>
+      <li class="leader reveal" style="--card-bg:#E4D7FF;--d:1">
+        <button class="leader-card" aria-expanded="false" aria-label="Awais Baig, Chief Strategy Officer and Senior Advisor. Show more about Awais">
+          <span class="leader-front">
+            <span class="photo-ph photo-ph--lg" data-person="Awais Baig"><span class="ph-label">Photo placeholder</span></span>
+            <span class="leader-meta">
+              <b class="leader-name">Awais Baig</b>
+              <span class="leader-title">Chief Strategy Officer and Senior Advisor</span>
+              <span class="leader-belief">Awais believes a strategy earns its keep in the field, not in the boardroom.</span>
+            </span>
+            <span class="leader-hint" aria-hidden="true">Hover to read more</span>
+          </span>
+          <span class="leader-back">
+            <b class="leader-name">Awais Baig</b>
+            <span class="leader-title">Chief Strategy Officer and Senior Advisor</span>
+            <span class="leader-bio">Awais Baig is Chief Strategy Officer and Senior Advisor at D++, where he helps shape the firm's direction and advises clients on the decisions that set theirs. He brings more than two decades of global leadership experience across several verticals of the energy and oil and gas sector, and the operator's view that comes with it: a strategy is only as good as its performance in the field.</span>
+          </span>
+        </button>
+      </li>
+      <li class="leader reveal" style="--card-bg:#DCEBFF;--d:2">
+        <button class="leader-card" aria-expanded="false" aria-label="Zeeshan Baig, Chief Operating Officer. Show more about Zeeshan">
+          <span class="leader-front">
+            <span class="photo-ph photo-ph--lg" data-person="Zeeshan Baig"><span class="ph-label">Photo placeholder</span></span>
+            <span class="leader-meta">
+              <b class="leader-name">Zeeshan Baig</b>
+              <span class="leader-title">Chief Operating Officer</span>
+              <span class="leader-belief">Zeeshan believes great delivery is a discipline: clear owners, honest status and no surprises.</span>
+            </span>
+            <span class="leader-hint" aria-hidden="true">Hover to read more</span>
+          </span>
+          <span class="leader-back">
+            <b class="leader-name">Zeeshan Baig</b>
+            <span class="leader-title">Chief Operating Officer</span>
+            <span class="leader-bio">Zeeshan Baig is Chief Operating Officer of D++, where he leads how the firm operates and delivers for its clients. He brings more than two decades of senior technology and operational leadership across the service industry and the public sector, environments where reliability, accountability and clear ownership are not optional.</span>
+          </span>
+        </button>
+      </li>
+      <li class="leader reveal" style="--card-bg:#F3DDF1;--d:3">
+        <button class="leader-card" aria-expanded="false" aria-label="Adil Baig, Chief Technology Officer. Show more about Adil">
+          <span class="leader-front">
+            <span class="photo-ph photo-ph--lg" data-person="Adil Baig"><span class="ph-label">Photo placeholder</span></span>
+            <span class="leader-meta">
+              <b class="leader-name">Adil Baig</b>
+              <span class="leader-title">Chief Technology Officer</span>
+              <span class="leader-belief">Adil believes innovation only counts once it is running in production.</span>
+            </span>
+            <span class="leader-hint" aria-hidden="true">Hover to read more</span>
+          </span>
+          <span class="leader-back">
+            <b class="leader-name">Adil Baig</b>
+            <span class="leader-title">Chief Technology Officer</span>
+            <span class="leader-bio">Adil Baig is Chief Technology Officer of D++, where he leads the engineering behind the systems D++ builds with its clients. He brings more than a decade of senior technology development and innovation roles at global companies known for moving fast. His focus is simple: getting new ideas out of prototype and into production.</span>
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div class="section-foot reveal">
+      <a class="inline-link" href="about.html#values">What we stand for <span class="arr" aria-hidden="true">→</span></a>
+      <a class="inline-link" href="services.html">How we work across four service lines <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     TEAM FOLD 3 — BUILD WHAT COMES NEXT WITH US (careers call to action)
+     ===================================================================== -->
+<section class="section section--soft contact" id="join" aria-labelledby="joinTitle">
+  <div class="wrap">
+    <div class="contact-card svc-cta join-card reveal">
+      <div class="contact-copy">
+        <span class="eyebrow eyebrow--light">Careers</span>
+        <h2 class="h1" id="joinTitle">Build what comes next with us</h2>
+        <p class="lead">We look for engineers, strategists and operators who would rather ship than present. If you want your work measured in client outcomes rather than slides, there is a seat for you at D++.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="contact.html#start">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <!-- Engineers, strategists and operators: three figures, one empty seat that keeps inviting -->
+      <svg class="contact-art join-art" viewBox="0 0 300 220" aria-hidden="true">
+        <defs>
+          <radialGradient id="jPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+          <radialGradient id="jSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+          <radialGradient id="jYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+          <radialGradient id="jViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+        </defs>
+        <rect x="14" y="176" width="272" height="14" rx="7" fill="#FFFFFF" fill-opacity=".14"/>
+        <g class="art-bob"><rect x="26" y="112" width="40" height="64" rx="20" fill="url(#jPink)"/><circle cx="46" cy="94" r="18" fill="url(#jPink)"/></g>
+        <g class="art-bob art-bob--b"><rect x="92" y="104" width="44" height="72" rx="22" fill="url(#jSky)"/><circle cx="114" cy="84" r="20" fill="url(#jSky)"/></g>
+        <g class="art-bob art-bob--c"><rect x="162" y="112" width="40" height="64" rx="20" fill="url(#jViolet)"/><circle cx="182" cy="94" r="18" fill="url(#jViolet)"/></g>
+        <!-- the open seat -->
+        <g class="seat">
+          <rect x="226" y="112" width="44" height="64" rx="22" fill="none" stroke="#FFE27A" stroke-width="4" stroke-dasharray="8 8"/>
+          <circle cx="248" cy="92" r="18" fill="none" stroke="#FFE27A" stroke-width="4" stroke-dasharray="7 7"/>
+          <text x="248" y="152" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="30" fill="#FFE27A">+</text>
+        </g>
+        <path class="twinkle" d="M276 40 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4 z" fill="#FFE27A" style="--dl:-.4s"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#values">Our approach</a></li>
+          <li><a href="team.html" aria-current="page">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

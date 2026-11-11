@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frequently asked questions | D++</title>
+<meta name="description" content="How D++ engagements start, how long they take, how we keep people in control of AI, and what stays with your teams after we leave.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-faqs">
+
+<!-- Shared gradients for the clay illustrations on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+    <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+    <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+    <radialGradient id="bOrange" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFD9BD"/><stop offset=".5" stop-color="#FF975A"/><stop offset="1" stop-color="#D45E24"/></radialGradient>
+    <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+    <linearGradient id="lilacBox" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4EEFF"/><stop offset="1" stop-color="#B99BF5"/></linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB585"/><stop offset="1" stop-color="#EF7534"/></linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFCDA8"/><stop offset="1" stop-color="#F6985E"/></linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFE4D0"/><stop offset="1" stop-color="#FCBB8F"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages). aria-current marks this page.
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html" aria-current="page">FAQs</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="faqPage">
+
+<!-- =====================================================================
+     FAQ FOLD 1 — HERO + SEARCH
+     The search box filters questions across all four service lines.
+     ===================================================================== -->
+<section class="faq-hero" aria-labelledby="faqTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><span aria-current="page">FAQs</span></nav>
+    <div class="faq-hero-grid">
+      <div class="faq-hero-copy">
+        <span class="eyebrow reveal">FAQs</span>
+        <h1 class="svc-title reveal" style="--d:1" id="faqTitle">Questions leaders ask us.</h1>
+        <p class="lead reveal" style="--d:2">Straight answers on how we work, what we deliver and what stays with your organization after we leave.</p>
+        <div class="faq-search reveal" style="--d:3" role="search">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5 L17.5 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <label class="sr-only" for="faqSearch">Search the questions</label>
+          <input id="faqSearch" type="search" placeholder="Search the questions, e.g. data, cloud, sprints" autocomplete="off">
+          <button class="faq-clear" id="faqClear" type="button" aria-label="Clear search" hidden>×</button>
+        </div>
+      </div>
+
+      <!-- Illustration: clay question tiles -->
+      <svg class="faq-art" viewBox="0 0 420 340" aria-hidden="true" focusable="false">
+        <ellipse cx="210" cy="318" rx="150" ry="14" fill="#17151F" opacity=".08"/>
+        <g class="art-bob"><rect x="70" y="70" width="150" height="150" rx="36" fill="url(#lilacBox)" transform="rotate(-8 145 145)"/><text x="145" y="190" text-anchor="middle" transform="rotate(-8 145 145)" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="118" fill="#6B3FD0">?</text></g>
+        <g class="art-bob art-bob--b"><rect x="240" y="40" width="96" height="96" rx="26" fill="url(#bYellow)" transform="rotate(10 288 88)"/><text x="288" y="120" text-anchor="middle" transform="rotate(10 288 88)" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="76" fill="#17151F">?</text></g>
+        <g class="art-bob art-bob--c"><circle cx="300" cy="220" r="44" fill="url(#bPink)"/><text x="300" y="242" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="58" fill="#FFFFFF">!</text></g>
+        <g class="art-bob"><circle cx="70" cy="262" r="20" fill="url(#bSky)"/></g>
+        <rect x="186" y="250" width="22" height="58" rx="5" fill="url(#bar1)"/><rect x="208" y="236" width="22" height="72" rx="5" fill="url(#bar2)"/><rect x="230" y="222" width="22" height="86" rx="5" fill="url(#bar3)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FAQ FOLD 2 — TABS BY SERVICE LINE + ANSWERS
+     Each .faq-group holds one line's questions. data-line must match a
+     tab. Links like faqs.html#data-ai open that tab.
+     ===================================================================== -->
+<section class="section section--white faq-main" aria-label="Questions by service line">
+  <div class="wrap">
+    <div class="faq-tabs" role="tablist" aria-label="Service line" id="faqTabs">
+      <button role="tab" id="tab-strategy" data-line="strategy" aria-selected="true" aria-controls="faq-strategy"><i class="chip chip--peach"></i>Strategy, Innovation &amp; Growth<span class="count"></span></button>
+      <button role="tab" id="tab-data-ai" data-line="data-ai" aria-selected="false" aria-controls="faq-data-ai"><i class="chip chip--lilac"></i>Data &amp; AI<span class="count"></span></button>
+      <button role="tab" id="tab-systems" data-line="systems" aria-selected="false" aria-controls="faq-systems"><i class="chip chip--sky"></i>Systems, Operations &amp; Business Transformation<span class="count"></span></button>
+      <button role="tab" id="tab-people" data-line="people" aria-selected="false" aria-controls="faq-people"><i class="chip chip--pink"></i>People, Process &amp; Technology<span class="count"></span></button>
+    </div>
+
+    <div class="faq-layout">
+      <!-- Side card follows the active tab -->
+      <aside class="faq-side" id="faqSide" data-line="strategy">
+        <b class="faq-side-name" id="faqSideName">Strategy, Innovation &amp; Growth</b>
+        <p class="faq-side-text" id="faqSideText">Turn bold ambition into strategy your enterprise can deliver.</p>
+        <a class="btn btn--dark btn--sm" id="faqSideSvc" href="service-strategy.html">Explore this service line <span class="arr" aria-hidden="true">→</span></a>
+        <a class="inline-link" href="contact.html#start">Ask your own question <span class="arr" aria-hidden="true">→</span></a>
+        <button class="faq-expand" id="faqExpand" type="button">Open all answers</button>
+      </aside>
+
+      <div class="faq-groups">
+        <p class="faq-results" id="faqResults" role="status" aria-live="polite"></p>
+
+        <div class="faq-group" id="faq-strategy" data-line="strategy" role="tabpanel" aria-labelledby="tab-strategy" data-title="Strategy, Innovation &amp; Growth" data-tagline="Turn bold ambition into strategy your enterprise can deliver.">
+          <details class="faq" open><summary>We already have a strategy. Where do you add value?</summary><div class="faq-a"><p>Most of our strategy work begins with a plan that already exists. We test it against what your processes, data and technology can carry today, then build the execution plan that closes the gap: an organized portfolio of projects with clear owners, measured on results and funded to deliver.</p></div></details>
+          <details class="faq"><summary>How is D++ different from a traditional strategy firm?</summary><div class="faq-a"><p>We build the strategy and the execution plan together, and the same team stays to deliver it. Our teams combine strategists with data specialists and engineers, so the plan is shaped from the start by what your enterprise can actually build.</p></div></details>
+          <details class="faq"><summary>How long does a strategy engagement take?</summary><div class="faq-a"><p>First engagements are deliberately short: a 6-week corporate strategy review, an 8-week growth diagnostic or a 10-week AI-led transformation assignment. Execution then runs in 2-week sprints, so progress is visible from the first month.</p></div></details>
+          <details class="faq"><summary>How will we know the strategy is working?</summary><div class="faq-a"><p>Every engagement starts with an agreed baseline and the number that defines success. We measure progress against that baseline, on results rather than activity, and report it the way your board will judge it.</p></div></details>
+          <details class="faq"><summary>Can you help us decide where AI fits in our strategy?</summary><div class="faq-a"><p>Yes. Our AI-led transformation work answers a direct question: how will AI actually drive our growth, efficiency, scale and innovation? We identify where it creates value, sequence the investments, and set the success criteria before anything is built.</p></div></details>
+        </div>
+
+        <div class="faq-group" id="faq-data-ai" data-line="data-ai" role="tabpanel" aria-labelledby="tab-data-ai" data-title="Data &amp; AI" data-tagline="Turn the data you already hold into decisions you can act on." hidden>
+          <details class="faq" open><summary>Our data isn't ready. Should we hold off on AI?</summary><div class="faq-a"><p>No, but sequence it. Every model inherits the quality of the data beneath it, so we build the foundation the first use case needs, prove value there, then extend it. A 6-week data strategy and governance engagement shows how complete, accurate and consistent your data is today.</p></div></details>
+          <details class="faq"><summary>How do you decide where AI is worth deploying?</summary><div class="faq-a"><p>We agree how success will be measured for each use case before we build. We then test against those measures, including unusual cases and costly errors, and deploy only where the business value is clear.</p></div></details>
+          <details class="faq"><summary>How do you keep people in control of automated decisions?</summary><div class="faq-a"><p>Every agent we build has a defined identity, role and access permissions, and every action it takes is recorded. We set limits on what each system may do and define when human approval is required, with a clear handover to a person whenever a case needs review.</p></div></details>
+          <details class="faq"><summary>Can you work in regulated industries such as healthcare and financial services?</summary><div class="faq-a"><p>Yes. Much of our experience is in healthcare, from payer to provider. Security, privacy and compliance are built into the architecture from day one, and a 4-week readiness engagement tests whether your data, systems, models and processes would hold up under audit.</p></div></details>
+          <details class="faq"><summary>Who controls our data?</summary><div class="faq-a"><p>You do. We define what information each system can use, where it may be processed and who can access it. Your organization retains control over its data and over the work carried out on its behalf.</p></div></details>
+        </div>
+
+        <div class="faq-group" id="faq-systems" data-line="systems" role="tabpanel" aria-labelledby="tab-systems" data-title="Systems, Operations &amp; Business Transformation" data-tagline="Build systems that let your organization scale with confidence." hidden>
+          <details class="faq" open><summary>Can we modernize without disrupting day-to-day operations?</summary><div class="faq-a"><p>Yes. We modernize in deliberate stages rather than one risky leap, starting with what your current systems do well. The business keeps running throughout.</p></div></details>
+          <details class="faq"><summary>Where do you start?</summary><div class="faq-a"><p>With your primary value streams. A 6-week current-state engagement maps how work and value flow through the business, measures performance, and shows where time, cost and quality are lost. That evidence decides what to change first.</p></div></details>
+          <details class="faq"><summary>Do you work in the cloud, on-premise or both?</summary><div class="faq-a"><p>Both. We choose infrastructure to match the workload, the data requirements and the operating budget, and we design migrations for the business you are becoming, not only the one you run today.</p></div></details>
+          <details class="faq"><summary>How do you make releases less risky?</summary><div class="faq-a"><p>Through automated release pipelines, automated testing alongside human code review, controlled releases and MLOps for AI models. The aim is simple: every release becomes routine rather than a risk.</p></div></details>
+          <details class="faq"><summary>What happens after go-live?</summary><div class="faq-a"><p>We put live monitoring in place, so your team knows what is running, how it is performing and what to do when something breaks. Documentation and knowledge transfer mean your people can operate and maintain what we built together.</p></div></details>
+        </div>
+
+        <div class="faq-group" id="faq-people" data-line="people" role="tabpanel" aria-labelledby="tab-people" data-title="People, Process &amp; Technology" data-tagline="Make change part of the fabric of your organization." hidden>
+          <details class="faq" open><summary>How do you make sure change sticks after launch?</summary><div class="faq-a"><p>We design the change with the people who will use it, so it is embraced rather than imposed. Clear roles, decision principles and accountability give every part of the progress a committed owner.</p></div></details>
+          <details class="faq"><summary>What will our teams be able to do once you leave?</summary><div class="faq-a"><p>Run, maintain and improve what we built together. We provide the documentation, training, mentoring and knowledge transfer your teams need, and we pass the baton only when your organization is ready to operate on its own.</p></div></details>
+          <details class="faq"><summary>What is a center of excellence, and do we need one?</summary><div class="faq-a"><p>A center of excellence gives expertise a permanent home, organized around your products and service lines. It provides shared standards, reusable tools and guidance, so delivery no longer waits on the same few specialists. A 6-week assessment shows whether, and where, you need one.</p></div></details>
+          <details class="faq"><summary>How do you use design thinking in practice?</summary><div class="faq-a"><p>We follow its five steps: empathize, define, ideate, prototype and test. In 4-week sprints, we test ideas cheaply with real users before your organization invests in building them at scale.</p></div></details>
+          <details class="faq"><summary>Where do lean and Six Sigma fit?</summary><div class="faq-a"><p>We apply them where they pay off, not everywhere. An 8-week diagnostic establishes the current state of a process and shows which parts to simplify, which to standardize and which to automate.</p></div></details>
+        </div>
+
+        <div class="faq-empty" id="faqEmpty" hidden>
+          <b>No questions match that search.</b>
+          <p>Try another word, or ask us directly.</p>
+          <a class="inline-link" href="contact.html#start">Ask your question <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FAQ FOLD 3 — CLOSING CTA
+     ===================================================================== -->
+<section class="section section--soft contact" aria-labelledby="faqCtaTitle">
+  <div class="wrap">
+    <div class="contact-card svc-cta reveal">
+      <div class="contact-copy">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2 class="h1" id="faqCtaTitle">Still have a question?</h2>
+        <p class="lead">Ask us directly. A senior member of our team will reply within two business days.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="contact.html#start">Contact us <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--white" href="services.html">Our services</a>
+        </div>
+      </div>
+      <!-- Question and answer on an 8s loop: a "?" bubble pops in, the reply bubble types
+           (bouncing dots), then the dots turn into a check. Without motion it shows the answered state. -->
+      <svg class="contact-art qa-art" viewBox="0 0 260 200" aria-hidden="true">
+        <g class="qa-q">
+          <path d="M34 22 H150 A16 16 0 0 1 166 38 V78 A16 16 0 0 1 150 94 H70 L46 114 L50 94 H34 A16 16 0 0 1 18 78 V38 A16 16 0 0 1 34 22 Z" fill="#FFFFFF"/>
+          <text x="92" y="76" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="46" fill="#6B3FD0">?</text>
+        </g>
+        <g class="qa-a">
+          <path d="M110 108 H226 A16 16 0 0 1 242 124 V164 A16 16 0 0 1 226 180 H210 L214 198 L190 180 H110 A16 16 0 0 1 94 164 V124 A16 16 0 0 1 110 108 Z" fill="url(#bYellow)"/>
+          <g class="qa-dots"><circle class="qa-dot" cx="144" cy="144" r="7" fill="#2A1680"/><circle class="qa-dot d2" cx="168" cy="144" r="7" fill="#2A1680"/><circle class="qa-dot d3" cx="192" cy="144" r="7" fill="#2A1680"/></g>
+          <path class="qa-check" d="M150 144 l12 12 l26 -26" fill="none" stroke="#2A1680" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <path class="twinkle" d="M232 40 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4 z" fill="#FFE27A" style="--dl:-.5s"/>
+        <path class="twinkle" d="M70 150 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 z" fill="#FFFFFF" style="--dl:-1.3s"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#values">Our approach</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html" aria-current="page">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

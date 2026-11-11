@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>D++ Services</title>
+<meta name="description" content="D++ services across four lines: Strategy, Innovation & Growth; Data & AI; Systems, Operations & Business Transformation; People, Process & Technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-services">
+
+<!-- Shared gradients for the clay illustrations on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+    <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+    <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+    <radialGradient id="bOrange" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFD9BD"/><stop offset=".5" stop-color="#FF975A"/><stop offset="1" stop-color="#D45E24"/></radialGradient>
+    <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+    <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F4EEFF"/><stop offset=".55" stop-color="#CDB5FF"/><stop offset="1" stop-color="#9A76EE"/></linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB585"/><stop offset="1" stop-color="#EF7534"/></linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFCDA8"/><stop offset="1" stop-color="#F6985E"/></linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFE4D0"/><stop offset="1" stop-color="#FCBB8F"/></linearGradient>
+  </defs>
+</svg>
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages). aria-current marks this page.
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" aria-current="page" href="services.html">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="svcPage">
+
+<!-- =====================================================================
+     SERVICES FOLD 1 — HERO WITH SERVICE-LINE SELECTOR
+     Clay-style "D++ for [service line ▾]". Each .svc-variant holds one
+     line's headline, body, button and visual. The page opens the line
+     named in the link (#strategy, #data-ai, #systems, #people).
+     ===================================================================== -->
+<section class="svc-hero" aria-labelledby="svcHeroTitle">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Homepage</a><span aria-hidden="true">/</span><span aria-current="page">Services</span></nav>
+
+    <div class="svc-hero-grid">
+      <div class="svc-hero-copy">
+        <div class="picker" id="picker">
+          <span class="picker-label">D++ for</span>
+          <button class="picker-btn" id="pickerBtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="pickerList">
+            <i class="chip" id="pickerChip"></i><span id="pickerText">Strategy, Innovation &amp; Growth</span>
+            <svg width="14" height="14" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="picker-list" id="pickerList" role="listbox" aria-label="Service line">
+            <li role="option" data-line="strategy" aria-selected="true"><i class="chip chip--peach"></i>Strategy, Innovation &amp; Growth</li>
+            <li role="option" data-line="data-ai" aria-selected="false"><i class="chip chip--lilac"></i>Data &amp; AI</li>
+            <li role="option" data-line="systems" aria-selected="false"><i class="chip chip--sky"></i>Systems, Operations &amp; Business Transformation</li>
+            <li role="option" data-line="people" aria-selected="false"><i class="chip chip--pink"></i>People, Process &amp; Technology</li>
+          </ul>
+        </div>
+
+        <!-- V1 -->
+        <div class="svc-variant" data-line="strategy" data-name="Strategy, Innovation &amp; Growth" data-chip="peach">
+          <h1 class="svc-title" id="svcHeroTitle">Turn bold ambition into strategy your enterprise can deliver.</h1>
+          <p class="lead">Boards approve plans their processes and technology cannot yet carry. We build the strategy and the execution plan together: a funded portfolio with clear owners, measured on results rather than activity.</p>
+          <div class="hero-actions"><a class="btn btn--dark" href="contact.html#start">Talk to a strategy lead <span class="arr" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="service-strategy.html">Explore this service</a></div>
+        </div>
+        <!-- V2 -->
+        <div class="svc-variant" data-line="data-ai" data-name="Data &amp; AI" data-chip="lilac" hidden>
+          <h1 class="svc-title">Turn the data you already hold into decisions you can act on.</h1>
+          <p class="lead">Most enterprises have more data than they can use and more pilots than they can scale. We build governed foundations first, then put AI into production where it creates measurable value.</p>
+          <div class="hero-actions"><a class="btn btn--dark" href="contact.html#start">Talk to a data and AI lead <span class="arr" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="service-data-ai.html">Explore this service</a></div>
+        </div>
+        <!-- V3 -->
+        <div class="svc-variant" data-line="systems" data-name="Systems, Operations &amp; Business Transformation" data-chip="sky" hidden>
+          <h1 class="svc-title">Build systems that let your organization scale with confidence.</h1>
+          <p class="lead">Transformation rarely falters at launch. It fails months later, through brittle design and platforms that cannot keep pace with demand. We build for the business you are becoming, not only the one you run today.</p>
+          <div class="hero-actions"><a class="btn btn--dark" href="contact.html#start">Talk to an operations lead <span class="arr" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="service-systems.html">Explore this service</a></div>
+        </div>
+        <!-- V4 -->
+        <div class="svc-variant" data-line="people" data-name="People, Process &amp; Technology" data-chip="pink" hidden>
+          <h1 class="svc-title">Make change part of the fabric of your organization.</h1>
+          <p class="lead">The hardest part of transformation is rarely the technology. We embed with your teams, build lasting capability, and pass the baton when your organization is ready to operate, innovate and grow on its own.</p>
+          <div class="hero-actions"><a class="btn btn--dark" href="contact.html#start">Talk to a transformation lead <span class="arr" aria-hidden="true">→</span></a><a class="btn btn--ghost" href="service-people.html">Explore this service</a></div>
+        </div>
+      </div>
+
+      <!-- Hero visual: one "board" per line (like Clay's territory map). Cards are illustrative. -->
+      <div class="board-wrap">
+        <div class="board" id="board" data-line="strategy">
+          <div class="board-grid" aria-hidden="true"></div>
+          <span class="board-hub" aria-hidden="true">D<b>++</b></span>
+          <svg class="board-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M27 30 L50 52 L73 26 M50 52 L50 78" fill="none" stroke="currentColor" stroke-width=".5" stroke-dasharray="1.5 1.5" vector-effect="non-scaling-stroke"/></svg>
+
+          <div class="board-set" data-line="strategy">
+            <div class="b-card b-card--a"><span class="b-tag" style="--c:#FFB585">Initiative</span><b>Growth thesis</b><span class="b-meta">Owner: Strategy office</span><span class="b-bar"><i style="--w:72%"></i></span><span class="b-pill">Funded · On track</span></div>
+            <div class="b-card b-card--b"><span class="b-tag" style="--c:#FFB585">Initiative</span><b>Cost to serve</b><span class="b-meta">Owner: Operations</span><span class="b-bar"><i style="--w:54%"></i></span><span class="b-pill">Funded · On track</span></div>
+            <div class="b-card b-card--c"><span class="b-tag" style="--c:#FFB585">Initiative</span><b>AI from pilot to scale</b><span class="b-meta">Owner: Data &amp; technology</span><span class="b-bar"><i style="--w:38%"></i></span><span class="b-pill">Measured on results</span></div>
+          </div>
+          <div class="board-set" data-line="data-ai" hidden>
+            <div class="b-card b-card--a"><span class="b-tag" style="--c:#B98CFF">Sources</span><b>CRM · ERP · EHR</b><span class="b-meta">Unified into one data core</span><span class="b-bar"><i style="--w:100%"></i></span><span class="b-pill">Governed</span></div>
+            <div class="b-card b-card--b"><span class="b-tag" style="--c:#B98CFF">Model</span><b>Demand forecast</b><span class="b-meta">Agreed success measure</span><span class="b-bar"><i style="--w:82%"></i></span><span class="b-pill">In production</span></div>
+            <div class="b-card b-card--c"><span class="b-tag" style="--c:#B98CFF">Agent</span><b>Intake triage</b><span class="b-meta">Every action recorded</span><span class="b-bar"><i style="--w:64%"></i></span><span class="b-pill">People approve judgment calls</span></div>
+          </div>
+          <div class="board-set" data-line="systems" hidden>
+            <div class="b-card b-card--a"><span class="b-tag" style="--c:#8EC5FF">Value stream</span><b>Order to cash</b><span class="b-meta">Mapped end to end</span><span class="b-bar"><i style="--w:68%"></i></span><span class="b-pill">Time lost found</span></div>
+            <div class="b-card b-card--b"><span class="b-tag" style="--c:#8EC5FF">Release</span><b>Pipeline automated</b><span class="b-meta">Cloud and on-premise</span><span class="b-bar"><i style="--w:90%"></i></span><span class="b-pill">Routine, not a risk</span></div>
+            <div class="b-card b-card--c"><span class="b-tag" style="--c:#8EC5FF">Platform</span><b>Built in stages</b><span class="b-meta">Business keeps running</span><span class="b-bar"><i style="--w:46%"></i></span><span class="b-pill">Scales with demand</span></div>
+          </div>
+          <div class="board-set" data-line="people" hidden>
+            <div class="b-card b-card--a"><span class="b-tag" style="--c:#F59AD3">Center of excellence</span><b>Data &amp; analytics</b><span class="b-meta">A lasting home for expertise</span><span class="b-bar"><i style="--w:60%"></i></span><span class="b-pill">Staffed</span></div>
+            <div class="b-card b-card--b"><span class="b-tag" style="--c:#F59AD3">Adoption</span><b>New ways of working</b><span class="b-meta">Measured, not just delivered</span><span class="b-bar"><i style="--w:76%"></i></span><span class="b-pill">Rising</span></div>
+            <div class="b-card b-card--c"><span class="b-tag" style="--c:#F59AD3">Handover</span><b>Ready to run on its own</b><span class="b-meta">Teams trained and coached</span><span class="b-bar"><i style="--w:88%"></i></span><span class="b-pill">Baton passed</span></div>
+          </div>
+        </div>
+        <p class="board-note">Illustrative example</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SERVICES FOLD 2 — LOGO STRIP: "Trusted by leaders at"
+     Names are set as text until approved logo files are supplied.
+     The list is written twice so the drift loops seamlessly.
+     ===================================================================== -->
+<section class="logo-strip" aria-labelledby="logosTitle">
+  <p class="logo-strip-title" id="logosTitle">Trusted by leaders at</p>
+  <div class="logo-rail">
+    <div class="logo-track">
+      <span class="lm lm--trilliant">trilliant health</span><span class="lm lm--anthem">Anthem</span><span class="lm lm--compassus">COMPASSUS</span><span class="lm lm--meinhardt">MEINHARDT</span><span class="lm lm--monogram">monogram health</span><span class="lm lm--cubhub">Statewise</span><span class="lm lm--trilliant">Team Blue</span><span class="lm lm--compassus">ROSEN</span><span class="lm lm--cubhub">IVORA AI</span><span class="lm lm--meinhardt">CONXAI</span><span class="lm lm--monogram">DesignX Solutions</span>
+      <span class="lm lm--trilliant" aria-hidden="true">trilliant health</span><span class="lm lm--anthem" aria-hidden="true">Anthem</span><span class="lm lm--compassus" aria-hidden="true">COMPASSUS</span><span class="lm lm--meinhardt" aria-hidden="true">MEINHARDT</span><span class="lm lm--monogram" aria-hidden="true">monogram health</span><span class="lm lm--cubhub" aria-hidden="true">Statewise</span><span class="lm lm--trilliant" aria-hidden="true">Team Blue</span><span class="lm lm--compassus" aria-hidden="true">ROSEN</span><span class="lm lm--cubhub" aria-hidden="true">IVORA AI</span><span class="lm lm--meinhardt" aria-hidden="true">CONXAI</span><span class="lm lm--monogram" aria-hidden="true">DesignX Solutions</span>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SERVICES FOLD 3 — WHAT WE DO
+     Line tabs stay in sync with the hero selector. Inside a line, the
+     services auto-advance like Clay's feature tabs; click one to pick it.
+     The right panel types out the service's opening line.
+     ===================================================================== -->
+<section class="section section--white" id="what-we-do" aria-labelledby="wwdTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Services</span>
+      <h2 class="h2 reveal" style="--d:1" id="wwdTitle">What we do</h2>
+    </div>
+
+    <div class="line-tabs reveal" style="--d:2" role="tablist" aria-label="Service line" id="lineTabs">
+      <button role="tab" data-line="strategy" aria-selected="true"><i class="chip chip--peach"></i>Strategy, Growth, and Innovation</button>
+      <button role="tab" data-line="data-ai" aria-selected="false"><i class="chip chip--lilac"></i>Data &amp; AI</button>
+      <button role="tab" data-line="systems" aria-selected="false"><i class="chip chip--sky"></i>Systems, Operations, &amp; Business Transformation</button>
+      <button role="tab" data-line="people" aria-selected="false"><i class="chip chip--pink"></i>People, Process &amp; Technology</button>
+    </div>
+
+    <div class="wwd reveal" style="--d:3">
+      <div class="wwd-lists">
+        <!-- Strategy, Growth, and Innovation -->
+        <ol class="svc-list" data-line="strategy">
+          <li><button class="svc-item" aria-expanded="true"><span class="svc-name">Corporate strategy</span><i class="svc-prog"></i></button><p>Where should we compete, and how will we win there? We help leadership teams answer both, then translate the answer into a three-to-five-year strategy and annual plans the business can execute.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Growth strategy</span><i class="svc-prog"></i></button><p>Where will the next 20% come from? We find the distinctive data and capabilities that set you apart and build a growth thesis on them, with clear bets and the metrics to judge them.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">AI-led transformation</span><i class="svc-prog"></i></button><p>Most AI programs start with technology. Ours start with the P&amp;L. We identify where AI will drive growth, efficiency and scale, then sequence the investments to deliver it.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Organizational strategy</span><i class="svc-prog"></i></button><p>Strategy fails when no one owns it. We define who owns each outcome, the mix of skills it will take, and whether your organization is ready to carry the change.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Operational excellence and execution</span><i class="svc-prog"></i></button><p>We turn the roadmap into a portfolio of funded projects with clear owners, then work in short sprints to deliver it, measured on results rather than activity.</p></li>
+        </ol>
+        <!-- Data & AI -->
+        <ol class="svc-list" data-line="data-ai" hidden>
+          <li><button class="svc-item" aria-expanded="true"><span class="svc-name">Data strategy and governance</span><i class="svc-prog"></i></button><p>Can your leaders trust the numbers in front of them? We assess how complete, accurate and consistent your data is, then build the governance that keeps one version of the truth.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Analytics and decision intelligence</span><i class="svc-prog"></i></button><p>Analysis only matters if it changes a decision. We review how your organization uses data to decide, and design the architecture that puts insight at the point of decision.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Applied AI and intelligent automation</span><i class="svc-prog"></i></button><p>We identify where AI adds value, agree how success will be measured, and deploy predictive models, language models and automation that hold up in production.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">AI engineering and agentic systems</span><i class="svc-prog"></i></button><p>We build agents that complete real business tasks. Each one has a defined role, access permissions and a record of every action, with people approving the decisions that need judgment.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Security, privacy and compliance</span><i class="svc-prog"></i></button><p>Would your data, systems, models and processes hold up under audit? We build controls into the architecture from day one, so you can scale AI without adding regulatory risk.</p></li>
+        </ol>
+        <!-- Systems, Operations, & Business Transformation -->
+        <ol class="svc-list" data-line="systems" hidden>
+          <li><button class="svc-item" aria-expanded="true"><span class="svc-name">Value stream assessment</span><i class="svc-prog"></i></button><p>What are your primary value streams, and how are they really performing? We map them end to end, measure them, and show where time, cost and quality are lost.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Operational readiness</span><i class="svc-prog"></i></button><p>Can your operating model carry the transformation you are planning? We test it before you commit, and close the gaps that would stall the program in its middle months.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Platforms, tools and systems</span><i class="svc-prog"></i></button><p>We examine how your business processes are tied to the technology you run today, and where those ties will break as demand grows.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Operational and technology transformation</span><i class="svc-prog"></i></button><p>We design future-state value streams and the technology beneath them, then build both in stages, so the business keeps running throughout.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Cloud platforms and production engineering</span><i class="svc-prog"></i></button><p>Secure cloud and on-premise infrastructure, automated release pipelines and MLOps that make every release routine rather than a risk.</p></li>
+        </ol>
+        <!-- People, Process & Technology -->
+        <ol class="svc-list" data-line="people" hidden>
+          <li><button class="svc-item" aria-expanded="true"><span class="svc-name">Center of excellence design</span><i class="svc-prog"></i></button><p>We organize centers of excellence around your products and service lines, giving expertise a lasting home and freeing delivery from depending on a few specialists.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Process excellence and automation</span><i class="svc-prog"></i></button><p>We apply lean and Six Sigma methods where they pay off, redesign the process with the people who run it, and automate what should be automated.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Design-thinking innovation</span><i class="svc-prog"></i></button><p>Empathy-led discovery, rapid prototyping and build. We test ideas cheaply with real users before your organization invests in building them at scale.</p></li>
+          <li><button class="svc-item" aria-expanded="false"><span class="svc-name">Capability building and change management</span><i class="svc-prog"></i></button><p>Technology changes in a release; habits change over months. We train and coach your teams to carry the work forward, and measure adoption, not just delivery.</p></li>
+        </ol>
+      </div>
+
+      <!-- Right panel: brief card for the selected service -->
+      <div class="wwd-panel" id="wwdPanel" data-line="strategy" aria-hidden="true">
+        <svg class="wwd-art" viewBox="0 0 200 150">
+          <ellipse cx="100" cy="140" rx="70" ry="7" fill="#17151F" opacity=".08"/>
+          <g class="art-bob"><circle cx="60" cy="58" r="22" fill="url(#bYellow)"/></g>
+          <g class="art-bob art-bob--b"><rect x="92" y="34" width="38" height="38" rx="9" fill="url(#bPink)" transform="rotate(14 111 53)"/></g>
+          <g class="art-bob art-bob--c"><circle cx="150" cy="78" r="16" fill="url(#bViolet)"/></g>
+          <rect x="54" y="98" width="26" height="40" rx="5" fill="url(#bar1)"/><rect x="82" y="84" width="26" height="54" rx="5" fill="url(#bar2)"/><rect x="110" y="70" width="26" height="68" rx="5" fill="url(#bar3)"/>
+        </svg>
+        <div class="brief">
+          <div class="brief-head"><span class="logo logo--sm">D<span>++</span></span><b id="briefLine">Strategy, Growth, and Innovation</b><span class="brief-count" id="briefCount">1 / 5</span></div>
+          <p class="brief-name" id="briefName">Corporate strategy</p>
+          <p class="brief-type" id="briefType">Where should we compete, and how will we win there?</p>
+          <div class="brief-foot">
+            <a class="inline-link" id="briefPage" href="service-strategy.html">Explore this service line <span class="arr">→</span></a>
+            <a class="inline-link" id="briefFaq" href="faqs.html#strategy">FAQs for this line <span class="arr">→</span></a>
+            <a class="inline-link" href="index.html#reviews">Read client reviews <span class="arr">→</span></a>
+            <a class="inline-link" href="contact.html#start">Talk to us <span class="arr">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SERVICES FOLD 4 — CASE STUDY (PLACEHOLDER)
+     Wireframe: Clay's case study card. Placeholder until a real D++ case
+     study is supplied; it will link to the Case Studies page.
+     ===================================================================== -->
+<section class="section section--soft" aria-labelledby="caseTitle">
+  <div class="wrap">
+    <article class="case-card reveal">
+      <div class="case-art" aria-hidden="true">
+        <svg viewBox="0 0 400 340">
+          <ellipse cx="200" cy="300" rx="130" ry="16" fill="#3A1FB8" opacity=".25"/>
+          <g class="art-bob"><circle cx="200" cy="160" r="110" fill="url(#bViolet)"/><text x="200" y="190" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="92" fill="#FFFFFF" letter-spacing="-4">D<tspan fill="#FFE27A">++</tspan></text></g>
+        </svg>
+      </div>
+      <div class="case-copy">
+        <span class="rev-tag">Placeholder · Case study</span>
+        <h2 class="h2" id="caseTitle">Lorem ipsum dolor</h2>
+        <p>This card is a placeholder for a case study. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <blockquote>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</blockquote>
+        <a class="btn btn--dark" href="case-studies.html">Read the case study <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SERVICES FOLD 5 — HOW WE WORK WITH YOU (five-step timeline)
+     Click a step, or let it play when it scrolls into view.
+     ===================================================================== -->
+<section class="section section--white" id="how-we-work" aria-labelledby="howTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Engagement model</span>
+      <h2 class="h2 reveal" style="--d:1" id="howTitle">How we work with you</h2>
+      <p class="lead reveal" style="--d:2">Every engagement starts small and specific: one question, one baseline, one number to move. We prove value first, then scale with a team accountable for the outcome.</p>
+    </div>
+
+    <div class="steps reveal" style="--d:3" id="steps">
+      <div class="steps-track" aria-hidden="true"><i class="steps-fill" id="stepsFill"></i><i class="steps-ball" id="stepsBall"></i></div>
+      <ol class="steps-list">
+        <li><button class="step" aria-pressed="true"><span class="step-num">01</span><span class="step-title">Frame the challenge</span></button></li>
+        <li><button class="step" aria-pressed="false"><span class="step-num">02</span><span class="step-title">Focused first engagement</span></button></li>
+        <li><button class="step" aria-pressed="false"><span class="step-num">03</span><span class="step-title">Proven value</span></button></li>
+        <li><button class="step" aria-pressed="false"><span class="step-num">04</span><span class="step-title">Embedded team</span></button></li>
+        <li><button class="step" aria-pressed="false"><span class="step-num">05</span><span class="step-title">Scale and hand over</span></button></li>
+      </ol>
+    </div>
+    <p class="steps-foot reveal"><a class="inline-link" href="about.html#values">The values behind every engagement <span class="arr" aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SERVICES FOLD 6 — CLOSING CTA (links to Contact and About)
+     ===================================================================== -->
+<section class="section section--soft contact" aria-labelledby="svcCtaTitle">
+  <div class="wrap">
+    <div class="contact-card svc-cta reveal">
+      <div class="contact-copy">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2 class="h1" id="svcCtaTitle">What's slowing you down?</h2>
+        <p class="lead">Every engagement we've run began with a leader describing a problem. Yours is next.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="contact.html#start">Talk to us <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--white" href="about.html">About D++</a>
+        </div>
+      </div>
+      <svg class="contact-art" viewBox="0 0 260 200" aria-hidden="true">
+        <rect x="70" y="120" width="34" height="70" rx="6" fill="url(#bar1)"/>
+        <rect x="104" y="88" width="34" height="102" rx="6" fill="url(#bar2)"/>
+        <rect x="138" y="52" width="34" height="138" rx="6" fill="url(#bar3)"/>
+        <g class="art-bob"><circle cx="87" cy="104" r="15" fill="url(#bYellow)"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#values">Our approach</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

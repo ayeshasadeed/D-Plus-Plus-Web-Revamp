@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Data &amp; AI | D++</title>
+<meta name="description" content="Governed data foundations, applied AI and intelligent automation, built into your operations with people in control, from governed foundations to AI running in production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="line-page line-data-ai" data-line="data-ai">
+
+<!-- =====================================================================
+     SITE HEADER (shared across pages)
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav-bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="D++ homepage">D<span>++</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="about.html">About Us</a></li>
+      <li><a class="nav-link" href="team.html">Team</a></li>
+      <li class="has-menu">
+        <a class="nav-link" href="services.html" aria-current="page">Services</a>
+        <button class="menu-caret" aria-expanded="false" aria-controls="menuServices" aria-label="Show service lines">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mega" id="menuServices">
+          <a href="service-strategy.html" class="mega-item"><i class="chip chip--peach"></i><b>Strategy, Growth, and Innovation</b><span>Move past inertia and make new ideas real</span></a>
+          <a href="service-data-ai.html" class="mega-item" aria-current="page"><i class="chip chip--lilac"></i><b>Data &amp; AI</b><span>Governed data first, then applied AI</span></a>
+          <a href="service-people.html" class="mega-item"><i class="chip chip--pink"></i><b>People, Process, &amp; Technology</b><span>Equip leaders to drive lasting change</span></a>
+          <a href="service-systems.html" class="mega-item"><i class="chip chip--sky"></i><b>Systems, Operations &amp; Business Transformation</b><span>Build the systems to get where you're going</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+      <li><a class="nav-link" href="blog.html">Insights</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn--dark btn--sm" href="contact.html#start">Talk to us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     HERO — night data landscape. Pulses travel along a network, cubes
+     ride a conveyor into the data core, orbit rings turn, and an agent
+     robot holds up its check. Layers with data-depth follow the pointer.
+     ===================================================================== -->
+<section class="hero line-hero" id="top" aria-labelledby="heroTitle">
+  <div class="hero-scene" aria-hidden="true">
+    <svg class="scene" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B0F5C"/><stop offset=".45" stop-color="#3A1FB8"/><stop offset=".7" stop-color="#8F6CF0"/></linearGradient>
+        <linearGradient id="hF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7D5CE6"/><stop offset="1" stop-color="#6646D6"/></linearGradient>
+        <linearGradient id="hM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5534C9"/><stop offset=".5" stop-color="#3D20AE"/></linearGradient>
+        <linearGradient id="hN" gradientUnits="userSpaceOnUse" x1="0" y1="560" x2="0" y2="900"><stop offset="0" stop-color="#2E1890"/><stop offset=".45" stop-color="#1C0D66"/><stop offset="1" stop-color="#140A4A"/></linearGradient>
+        <linearGradient id="tree" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9B7BF2"/><stop offset="1" stop-color="#3D20AE"/></linearGradient>
+        <radialGradient id="bViolet" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D2B6FF"/><stop offset=".5" stop-color="#7B3FF2"/><stop offset="1" stop-color="#4520AE"/></radialGradient>
+        <radialGradient id="bYellow" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF8D6"/><stop offset=".5" stop-color="#FFE27A"/><stop offset="1" stop-color="#E2AE2C"/></radialGradient>
+        <radialGradient id="bPink" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFE0F3"/><stop offset=".5" stop-color="#F59AD3"/><stop offset="1" stop-color="#C45A9F"/></radialGradient>
+        <radialGradient id="bSky" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EAF4FF"/><stop offset=".5" stop-color="#8EC5FF"/><stop offset="1" stop-color="#4A82D6"/></radialGradient>
+        <radialGradient id="bLilac" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#D9C6FF"/><stop offset="1" stop-color="#9F7DEE"/></radialGradient>
+        <radialGradient id="glowY"><stop offset="0" stop-color="#FFE27A" stop-opacity=".9"/><stop offset="1" stop-color="#FFE27A" stop-opacity="0"/></radialGradient>
+        <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F4EEFF"/><stop offset=".55" stop-color="#CDB5FF"/><stop offset="1" stop-color="#9A76EE"/></linearGradient>
+        <linearGradient id="cream" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E4D7FF"/></linearGradient>
+        <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+        <filter id="grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" result="n"/>
+          <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+          <feComposite in="SourceGraphic" in2="g" operator="arithmetic" k1="0" k2="1" k3=".22" k4="-.11" result="t"/>
+          <feComposite in="t" in2="SourceGraphic" operator="in"/>
+        </filter>
+        <g id="treeShape"><rect x="-3" y="-8" width="6" height="12" rx="2" fill="#1C0D66"/><path d="M0 -74 C12 -56 23 -28 18 -10 Q0 -1 -18 -10 C-23 -28 -12 -56 0 -74Z" fill="url(#tree)"/><path d="M-6 -58 C-12 -40 -14 -26 -11 -16" stroke="#FFFFFF" stroke-opacity=".3" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+        <path id="star4" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z"/>
+        <!-- network links (pulses follow these) -->
+        <path id="e1" d="M300 300 L420 190"/><path id="e2" d="M420 190 L560 260"/><path id="e3" d="M560 260 L690 170"/>
+        <path id="e4" d="M560 260 L640 380"/><path id="e5" d="M300 300 L440 380"/><path id="e6" d="M440 380 L640 380"/><path id="e7" d="M640 380 L900 430"/>
+      </defs>
+
+      <rect width="1600" height="900" fill="url(#sky)"/>
+      <!-- Stars and moon -->
+      <g class="layer" data-depth="-3">
+        <circle cx="1330" cy="140" r="90" fill="url(#glowY)" opacity=".5"/><circle class="pulse" cx="1330" cy="140" r="38" fill="url(#bYellow)"/>
+        <g fill="#FFFFFF">
+          <use href="#star4" class="twinkle" transform="translate(140 80) scale(.8)" style="--dl:-.2s"/><use href="#star4" class="twinkle" transform="translate(260 160) scale(.5)" style="--dl:-1.2s"/>
+          <use href="#star4" class="twinkle" transform="translate(820 70) scale(.7)" style="--dl:-.8s"/><use href="#star4" class="twinkle" transform="translate(980 150) scale(.5)" style="--dl:-1.8s"/>
+          <use href="#star4" class="twinkle" transform="translate(1520 90) scale(.6)" style="--dl:-.5s"/><use href="#star4" class="twinkle" transform="translate(1160 60) scale(.45)" style="--dl:-1.5s"/>
+          <circle class="twinkle" cx="520" cy="60" r="2.5" style="--dl:-.4s"/><circle class="twinkle" cx="700" cy="110" r="2" style="--dl:-1s"/><circle class="twinkle" cx="1440" cy="210" r="2.5" style="--dl:-2s"/><circle class="twinkle" cx="60" cy="200" r="2" style="--dl:-1.4s"/>
+        </g>
+      </g>
+      <!-- Far hills -->
+      <g class="layer" data-depth="-8">
+        <path filter="url(#grain)" d="M-80 470 C200 400 380 420 560 455 S900 420 1060 450 S1400 400 1680 440 L1680 900 L-80 900Z" fill="url(#hF)"/>
+        <use href="#treeShape" transform="translate(110 452) scale(.8)"/><use href="#treeShape" transform="translate(150 446)"/><use href="#treeShape" transform="translate(1505 432)"/><use href="#treeShape" transform="translate(1550 440) scale(.7)"/>
+      </g>
+      <!-- Mid hill -->
+      <g class="layer" data-depth="-12">
+        <path filter="url(#grain)" d="M-80 545 C220 470 420 480 640 520 S1000 500 1200 515 S1480 470 1680 500 L1680 900 L-80 900Z" fill="url(#hM)"/>
+        <use href="#treeShape" transform="translate(1420 494) scale(1.35)"/><use href="#treeShape" transform="translate(1466 500) scale(1.1)"/>
+      </g>
+      <!-- Network graph with travelling pulses -->
+      <g class="layer" data-depth="16">
+        <g stroke="#CDB5FF" stroke-opacity=".5" stroke-width="3" fill="none" stroke-linecap="round">
+          <use href="#e1"/><use href="#e2"/><use href="#e3"/><use href="#e4"/><use href="#e5"/><use href="#e6"/><use href="#e7" stroke-dasharray="4 10"/>
+        </g>
+        <g fill="#FFFFFF">
+          <circle r="5"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="2.6s" begin="-.8s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="2s" begin="-1.2s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="2.4s" begin="-.3s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="2.8s" begin="-1.6s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="2.2s" begin="-.6s" repeatCount="indefinite"><mpath href="#e6"/></animateMotion></circle>
+          <circle r="6" fill="#FFE27A"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#e7"/></animateMotion></circle>
+        </g>
+        <circle class="pulse" cx="300" cy="300" r="22" fill="url(#bPink)"/>
+        <circle cx="420" cy="190" r="18" fill="url(#bSky)"/>
+        <circle class="pulse" cx="560" cy="260" r="26" fill="url(#bLilac)"/>
+        <circle cx="690" cy="170" r="16" fill="url(#bYellow)"/>
+        <circle cx="440" cy="380" r="16" fill="url(#bSky)"/>
+        <circle class="pulse" cx="640" cy="380" r="22" fill="url(#bViolet)"/>
+      </g>
+      <!-- Conveyor of data cubes into the core -->
+      <g class="layer" data-depth="8">
+        <rect x="700" y="500" width="280" height="16" rx="8" fill="#1C0D66"/>
+        <g fill="#2E1890"><circle cx="716" cy="508" r="5"/><circle cx="780" cy="508" r="5"/><circle cx="844" cy="508" r="5"/><circle cx="908" cy="508" r="5"/><circle cx="964" cy="508" r="5"/></g>
+        <rect class="slide-s" x="706" y="472" width="28" height="28" rx="7" fill="url(#bPink)" style="--dl:0s"/>
+        <rect class="slide-s" x="706" y="472" width="28" height="28" rx="7" fill="url(#bSky)" style="--dl:-1.3s"/>
+        <rect class="slide-s" x="706" y="472" width="28" height="28" rx="7" fill="url(#bYellow)" style="--dl:-2.6s"/>
+      </g>
+      <!-- Data core with orbit rings and sparkles -->
+      <g class="layer" data-depth="12">
+        <ellipse cx="1050" cy="522" rx="96" ry="12" fill="#000" opacity=".25"/>
+        <path d="M975 370 V500 A75 22 0 0 0 1125 500 V370 Z" fill="url(#cyl)"/>
+        <path d="M975 414 A75 22 0 0 0 1125 414" fill="none" stroke="#8A62EA" stroke-width="4" opacity=".55"/>
+        <path d="M975 458 A75 22 0 0 0 1125 458" fill="none" stroke="#8A62EA" stroke-width="4" opacity=".55"/>
+        <ellipse cx="1050" cy="370" rx="75" ry="22" fill="#F7F2FF"/>
+        <ellipse class="pulse" cx="1050" cy="372" rx="56" ry="14" fill="#FFE27A" opacity=".85"/>
+        <ellipse class="orbit" cx="1050" cy="430" rx="130" ry="34" fill="none" stroke="#FFE27A" stroke-width="3" stroke-dasharray="10 14"/>
+        <ellipse class="orbit" cx="1050" cy="430" rx="156" ry="46" fill="none" stroke="#F59AD3" stroke-width="2.5" stroke-dasharray="6 18" style="animation-direction:reverse"/>
+        <g fill="#FFE27A">
+          <g transform="translate(1020 340) scale(.9)"><use href="#star4" class="heart-up" style="--dl:0s"/></g>
+          <g transform="translate(1080 330) scale(.7)"><use href="#star4" class="heart-up" style="--dl:-1.6s"/></g>
+          <g transform="translate(1050 320) scale(1.1)"><use href="#star4" class="heart-up" style="--dl:-3.2s"/></g>
+        </g>
+      </g>
+      <!-- Agent robot with its check -->
+      <g class="layer" data-depth="18">
+        <ellipse cx="1302" cy="522" rx="48" ry="8" fill="#000" opacity=".25"/>
+        <g class="float float--2">
+          <rect x="1270" y="420" width="64" height="94" rx="30" fill="url(#bLilac)"/>
+          <circle cx="1302" cy="392" r="32" fill="url(#cream)"/>
+          <rect x="1280" y="380" width="44" height="20" rx="10" fill="#2A1680"/>
+          <circle class="twinkle" cx="1293" cy="390" r="4" fill="#8EC5FF"/><circle class="twinkle" cx="1311" cy="390" r="4" fill="#8EC5FF" style="--dl:-.3s"/>
+          <line x1="1302" y1="360" x2="1302" y2="342" stroke="#E4D7FF" stroke-width="4" stroke-linecap="round"/>
+          <circle class="led" cx="1302" cy="338" r="7" fill="#FFE27A"/>
+          <rect x="1328" y="440" width="34" height="10" rx="5" fill="#CDB5FF" transform="rotate(-30 1330 445)"/>
+        </g>
+        <g class="float float--3">
+          <circle cx="1378" cy="404" r="24" fill="url(#bYellow)"/>
+          <path d="M1367 404 l7 7 l13 -14" stroke="#3A1FB8" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+      <!-- Near hill (text sits here) -->
+      <g class="layer" data-depth="-16"><path filter="url(#grain)" d="M-80 610 C300 560 600 548 820 560 S1300 565 1680 600 L1680 900 L-80 900Z" fill="url(#hN)"/></g>
+    </svg>
+  </div>
+
+
+  <div class="hero-content wrap">
+    <div class="hero-copy-left">
+      <div class="line-eyebrow reveal"><a href="services.html">Services</a><span aria-hidden="true">·</span><span>Data &amp; AI</span></div>
+      <h1 class="hero-title reveal" style="--d:1" id="heroTitle">AI in production, not in pilots.</h1>
+    </div>
+    <div class="hero-side">
+      <p class="hero-lead reveal" style="--d:2">We pair deep data expertise with applied AI to turn the information you already hold into decisions your leaders can act on with confidence.</p>
+      <div class="hero-actions reveal" style="--d:3">
+        <a class="btn btn--white" href="case-studies.html">See our impact <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn--yellow" href="contact.html#start">Talk to a data and AI lead <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     THE PROBLEM — the distance closes as you scroll
+     ===================================================================== -->
+<section class="section section--white" aria-labelledby="problemTitle">
+  <div class="wrap gap-sec">
+    <div class="gap-copy">
+      <span class="eyebrow reveal">The problem</span>
+      <h2 class="h2 reveal" style="--d:1" id="problemTitle">The distance between a promising model and a trusted decision.</h2>
+      <p class="reveal" style="--d:2">Most enterprises have more data than they can use and more pilots than they can scale. Models perform in the lab, then falter on data that is incomplete, inconsistent or ungoverned. Leaders hesitate to act on outputs they cannot explain.</p>
+      <p class="reveal" style="--d:3">That distance is where many AI programs stall. <strong>We work beside your teams to close it.</strong></p>
+    </div>
+    <div class="gap-card reveal" data-mode="bridge" aria-hidden="true">
+      <div class="gap-ends">
+        <span class="gap-end"><small>In the lab</small>A promising model</span>
+        <span class="gap-end"><small>In the business</small>A trusted decision</span>
+      </div>
+      <div class="gap-track"><i class="l"></i><i class="r"></i></div>
+      <span class="gap-badge"><i></i>We work beside your teams to close it.</span>
+      <span class="gap-hint">Scroll to close the distance</span>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     OUR POINT OF VIEW — principles + "people stay in control" router
+     ===================================================================== -->
+<section class="section section--soft" aria-labelledby="povTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Our point of view</span>
+      <h2 class="h2 reveal" style="--d:1" id="povTitle">Foundations first. Then AI that pays its way.</h2>
+    </div>
+    <div class="pov-grid">
+      <article class="pov-card reveal" tabindex="0"><span class="pov-orb" aria-hidden="true"><i></i><i></i><i></i></span><h3>Data foundations before models</h3><p>Highly governed, well-structured data comes first, because every analysis, every model, every algorithm and every agent inherits its quality.</p></article>
+      <article class="pov-card reveal" style="--d:1" tabindex="0"><span class="pov-orb" aria-hidden="true"><i></i><i></i><i></i></span><h3>AI with real business value</h3><p>Predictive models, trained language models, agentic systems and intelligent automation, deployed only where they create measurable value and grounded in real-world experience across industries.</p></article>
+      <article class="pov-card reveal" style="--d:2" tabindex="0"><span class="pov-orb" aria-hidden="true"><i></i><i></i><i></i></span><h3>Trust designed in from day one</h3><p>Security, privacy and compliance are built into the architecture from the beginning, so your systems hold up under audit as they scale.</p></article>
+    </div>
+
+    <div class="control reveal">
+      <div>
+        <span class="eyebrow eyebrow--light">Intelligent Automation</span>
+        <h3>People stay in control.</h3>
+        <p>Every agent we build has a defined identity, role and access permissions, and every action it takes is recorded. You decide which decisions run automatically, which wait for approval, and which stay with your experts. Our proprietary Intelligent Automation approach is built on that principle: high-trust automation of the value chain, with a clear handover to a person when a case needs judgment.</p>
+      </div>
+      <div>
+        <div class="route-btns" role="group" aria-label="Choose where a decision goes">
+          <button data-route="auto" aria-pressed="true">Runs automatically</button>
+          <button data-route="approve" aria-pressed="false">Waits for approval</button>
+          <button data-route="expert" aria-pressed="false">Stays with your experts</button>
+        </div>
+        <div class="router" id="router" aria-hidden="true">
+          <span class="router-in">A new<br>case</span>
+          <div class="lanes">
+            <div class="lane" data-route="auto">Runs automatically <em>Action recorded</em></div>
+            <div class="lane" data-route="approve">Waits for approval <em>A person signs off</em></div>
+            <div class="lane" data-route="expert">Stays with your experts <em>Judgment call</em></div>
+          </div>
+          <i class="case-ball"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     WHAT WE DO — question cards. data-weeks sets the week blocks.
+     ===================================================================== -->
+<section class="section section--white" id="what-we-do" aria-labelledby="wwdTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">What we do</span>
+      <h2 class="h2 reveal" style="--d:1" id="wwdTitle">Four ways we build lasting capability.</h2>
+    </div>
+    <div class="q-grid">
+      <div class="q-head" aria-hidden="true"><span>Service</span><span>The question it answers</span><span>First engagement</span></div>
+      <article class="q-card reveal"><span class="q-kicker">Data strategy and governance</span><p class="q-text">How good, complete, accurate and consistent is our data, and can we trust it?</p><div class="q-eng"><span class="q-eng-label">First engagement <b>6-week engagement</b></span></div></article>
+      <article class="q-card reveal" style="--d:1"><span class="q-kicker">Analytics and decision intelligence</span><p class="q-text">Is our analysis relevant to the decisions we actually make, and does it reach the people making them?</p><div class="q-eng"><span class="q-eng-label">First engagement <b>8-week review and architecture proposal</b></span></div></article>
+      <article class="q-card reveal"><span class="q-kicker">Applied AI and intelligent automation</span><p class="q-text">Where is AI relevant, what value will it add, and how will we measure success?</p><div class="q-eng"><span class="q-eng-label">First engagement <b>4-week design and implementation sprints</b></span></div></article>
+      <article class="q-card reveal" style="--d:1"><span class="q-kicker">Security, privacy and compliance</span><p class="q-text">Would our data, systems, models and processes hold up under audit?</p><div class="q-eng"><span class="q-eng-label">First engagement <b>4-week readiness engagement</b></span></div></article>
+    </div>
+    <div class="section-foot reveal">
+      <a class="inline-link" href="faqs.html#data-ai">Questions about data and AI <span class="arr" aria-hidden="true">→</span></a>
+      <a class="inline-link" href="index.html#problem">Before vs With D++ <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CLOSING CTA — pull quote, question, first step
+     ===================================================================== -->
+<section class="section section--soft contact" aria-labelledby="ctaTitle">
+  <div class="wrap">
+    <div class="contact-card line-cta reveal">
+      <div class="contact-copy">
+        <h2 class="h2" id="ctaTitle">Have more pilots than production systems?</h2>
+        <p class="lead">Start with a 4-week readiness engagement. You will know which use case is ready to scale, what your data needs first, and how success will be measured.</p>
+        <div class="hero-actions">
+          <a class="btn btn--yellow" href="contact.html#start">Talk to a data and AI lead <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn--white" href="faqs.html#data-ai">Read the FAQs</a>
+        </div>
+      </div>
+      <!-- Data in, AI in the middle, a trusted decision out: pulses travel cube → chip → check -->
+      <svg class="contact-art" viewBox="0 0 340 260" aria-hidden="true">
+        <defs>
+          <path id="ca1" d="M62 66 C95 66 100 110 126 116"/>
+          <path id="ca2" d="M62 130 L126 130"/>
+          <path id="ca3" d="M62 194 C95 194 100 150 126 144"/>
+          <path id="ca4" d="M214 130 C238 130 246 130 262 130"/>
+          <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9B6CFF"/><stop offset="1" stop-color="#4520AE"/></linearGradient>
+        </defs>
+        <!-- links -->
+        <g fill="none" stroke="#CDB5FF" stroke-opacity=".45" stroke-width="3" stroke-linecap="round">
+          <use href="#ca1"/><use href="#ca2"/><use href="#ca3"/><use href="#ca4" stroke-dasharray="4 7"/>
+        </g>
+        <!-- pulses -->
+        <g fill="#FFFFFF">
+          <circle r="5"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#ca1"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="1.8s" begin="-.6s" repeatCount="indefinite"><mpath href="#ca2"/></animateMotion></circle>
+          <circle r="5"><animateMotion dur="1.8s" begin="-1.2s" repeatCount="indefinite"><mpath href="#ca3"/></animateMotion></circle>
+          <circle r="6" fill="#FFE27A"><animateMotion dur="1.2s" repeatCount="indefinite"><mpath href="#ca4"/></animateMotion></circle>
+        </g>
+        <!-- data in -->
+        <g class="art-bob"><rect x="22" y="46" width="40" height="40" rx="10" fill="url(#bPink)"/></g>
+        <g class="art-bob art-bob--b"><rect x="22" y="110" width="40" height="40" rx="10" fill="url(#bSky)"/></g>
+        <g class="art-bob art-bob--c"><rect x="22" y="174" width="40" height="40" rx="10" fill="url(#bYellow)"/></g>
+        <!-- AI chip -->
+        <g stroke="#CDB5FF" stroke-width="5" stroke-linecap="round">
+          <line x1="146" y1="72" x2="146" y2="86"/><line x1="170" y1="72" x2="170" y2="86"/><line x1="194" y1="72" x2="194" y2="86"/>
+          <line x1="146" y1="174" x2="146" y2="188"/><line x1="170" y1="174" x2="170" y2="188"/><line x1="194" y1="174" x2="194" y2="188"/>
+          <line x1="112" y1="106" x2="126" y2="106"/><line x1="112" y1="154" x2="126" y2="154"/>
+          <line x1="214" y1="106" x2="228" y2="106"/><line x1="214" y1="154" x2="228" y2="154"/>
+        </g>
+        <rect x="126" y="86" width="88" height="88" rx="20" fill="url(#chip)"/>
+        <rect class="pulse" x="144" y="104" width="52" height="52" rx="12" fill="#FFE27A"/>
+        <text x="170" y="139" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-weight="700" font-size="24" fill="#2A1680">AI</text>
+        <!-- trusted decision out -->
+        <circle class="pulse" cx="292" cy="130" r="40" fill="#FFE27A" opacity=".18"/>
+        <circle cx="292" cy="130" r="28" fill="url(#bYellow)"/>
+        <path d="M279 131 l9 9 l16 -18" stroke="#3A1FB8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="#FFE27A">
+          <g transform="translate(322 82) scale(.7)"><use href="#star4" class="twinkle" style="--dl:-.4s"/></g>
+          <g transform="translate(262 84) scale(.5)"><use href="#star4" class="twinkle" style="--dl:-1.2s"/></g>
+          <g transform="translate(318 186) scale(.55)"><use href="#star4" class="twinkle" style="--dl:-.8s"/></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     SITE FOOTER (shared across pages)
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo logo--light" href="index.html">D<span>++</span></a>
+        <p>Intelligent automation, built on data you can trust.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-strategy.html">Strategy, Growth, and Innovation</a></li>
+          <li><a href="service-data-ai.html" aria-current="page">Data &amp; AI</a></li>
+          <li><a href="service-people.html">People, Process, &amp; Technology</a></li>
+          <li><a href="service-systems.html">Systems, Operations &amp; Business Transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#values">Our approach</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="case-studies.html">Case studies</a></li>
+          <li><a href="blog.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul class="foot-plain">
+          <li>3401 Mallory Lane</li>
+          <li>Franklin, TN 37067</li>
+          <li>info@dplpl.com</li>
+          <li>+1 229-699-4144</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 D++. All rights reserved.</span><a href="#siteHeader">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
